@@ -7,7 +7,8 @@ public class HumanMovement : MonoBehaviour
 
     public float speed = 3f;
 
-    public List<GameObject> waypoints;
+    public GameObject[] waypoints;
+    private int currentWP;
 
     Rigidbody2D rigidbody2D;
 
@@ -33,7 +34,27 @@ public class HumanMovement : MonoBehaviour
 
     private void Move()
     {
-        transform.Translate(speed * Time.deltaTime, 0, 0);
+        if(Vector2.Distance(gameObject.transform.position, waypoints[currentWP].transform.position) < 1)
+        {
+            currentWP += 1;
+        }
+
+        if(currentWP >= waypoints.Length)
+        {
+            currentWP = 0;
+        }
+        transform.LookAt(waypoints[currentWP].transform.position);
+
+        transform.Translate(0, 0, speed * Time.deltaTime);
+
+        /*if (waypoints[currentWP].transform.position.x - gameObject.transform.position.x >= 0)
+        {
+            return;
+        }
+        else
+        {
+            transform.rotation = Quaternion.AngleAxis(180, Vector3.up);
+        }*/
     }
 
 }
