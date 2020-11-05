@@ -5,6 +5,10 @@ using UnityEngine;
 public class HumanMovement : MonoBehaviour
 {
 
+    public float speed = 3f;
+
+    public List<GameObject> waypoints;
+
     Rigidbody2D rigidbody2D;
 
     private void Start()
@@ -23,6 +27,13 @@ public class HumanMovement : MonoBehaviour
         {
             rigidbody2D.isKinematic = false;
         }
+
+        Move();
+    }
+
+    private void Move()
+    {
+        transform.Translate(speed * Time.deltaTime, 0, 0);
     }
 
 }
