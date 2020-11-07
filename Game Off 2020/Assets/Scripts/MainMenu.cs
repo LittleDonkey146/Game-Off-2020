@@ -6,13 +6,15 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     
-    public void StartGame()
+    // The Start Game button
+    public void StartGame() 
     {
         SceneManager.LoadScene("Main Game");
     }
 
     //The options button is not yet ready
 
+    // The Exit Game button
     public void Exit()
     {
         Application.Quit();

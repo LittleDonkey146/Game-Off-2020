@@ -29,16 +29,18 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-    public void ActivatePauseMenu() //οταν ενεργοποιείται το μενού απενεργοποιούνται τα εξής
+    // When the Pause Menu is activated (when P is pressed)
+    public void ActivatePauseMenu() 
     {
 
         Time.timeScale = 0f;
         pauseMenu.SetActive(true);
-        pauseMenu.transform.position = new Vector3(960, 540, 0); //Μετακινεί το pause menu στο κέντρο του canvas
+        pauseMenu.transform.position = new Vector3(960, 540, 0); // Moves the Pause Menu in the center of the canvas
 
     }
 
-    public void DeactivatePauseMenu() //οταν απενεργοποιείται το μενού ενεργοποιούνται τα εξής
+    // When the Pause Menu is deactivated (when P is pressed again)
+    public void DeactivatePauseMenu() 
     {
 
         Time.timeScale = 1f;
