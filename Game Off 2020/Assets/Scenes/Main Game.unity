@@ -277,6 +277,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &92814170
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,6 +526,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &161650701
 GameObject:
   m_ObjectHideFlags: 0
@@ -709,6 +711,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &222669267
 GameObject:
   m_ObjectHideFlags: 0
@@ -963,6 +966,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &309080565
 GameObject:
   m_ObjectHideFlags: 0
@@ -1008,6 +1012,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &309312572
 GameObject:
   m_ObjectHideFlags: 0
@@ -1053,6 +1058,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &316352749
 GameObject:
   m_ObjectHideFlags: 0
@@ -1098,6 +1104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 6913858032056350718, guid: c15ffc604511a9d429f98a892832fcfb, type: 3}
 --- !u!1 &318823478
 GameObject:
   m_ObjectHideFlags: 0
@@ -1382,7 +1389,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 390047409}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.77, y: 0, z: 0}
+  m_LocalPosition: {x: -22.21, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1858543154}
@@ -1402,6 +1409,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &400933058
 GameObject:
   m_ObjectHideFlags: 0
@@ -1693,6 +1701,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &586362352
 GameObject:
   m_ObjectHideFlags: 0
@@ -1738,6 +1747,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &618839057
 GameObject:
   m_ObjectHideFlags: 0
@@ -1783,6 +1793,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &639435433
 GameObject:
   m_ObjectHideFlags: 0
@@ -1960,6 +1971,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &699171341
 GameObject:
   m_ObjectHideFlags: 0
@@ -2189,6 +2201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &825764012
 GameObject:
   m_ObjectHideFlags: 0
@@ -2550,6 +2563,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &962468242
 GameObject:
   m_ObjectHideFlags: 0
@@ -2762,7 +2776,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1071457284}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.72, y: 0, z: 0}
+  m_LocalPosition: {x: -19.65, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1858543154}
@@ -2782,6 +2796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &1096522660
 GameObject:
   m_ObjectHideFlags: 0
@@ -3049,6 +3064,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &1285438462
 GameObject:
   m_ObjectHideFlags: 0
@@ -3094,6 +3110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &1298060253
 GameObject:
   m_ObjectHideFlags: 0
@@ -3252,6 +3269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &1335569785
 GameObject:
   m_ObjectHideFlags: 0
@@ -3437,7 +3455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbc9472c678da95458a8e84e38a6ce8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 10000
   damage: 0
   text: {fileID: 1298060255}
   lavaDrops: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
@@ -3582,6 +3600,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &1401451615
 GameObject:
   m_ObjectHideFlags: 0
@@ -3687,6 +3706,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &1451898388
 GameObject:
   m_ObjectHideFlags: 0
@@ -3732,6 +3752,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &1468755852
 GameObject:
   m_ObjectHideFlags: 0
@@ -3777,6 +3798,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &1470484227
 GameObject:
   m_ObjectHideFlags: 0
@@ -3822,6 +3844,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &1489409580
 GameObject:
   m_ObjectHideFlags: 0
@@ -3980,6 +4003,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &1542086484
 GameObject:
   m_ObjectHideFlags: 0
@@ -4134,6 +4158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &1580710395
 GameObject:
   m_ObjectHideFlags: 0
@@ -4287,6 +4312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &1622935832
 GameObject:
   m_ObjectHideFlags: 0
@@ -4640,6 +4666,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &1743023025
 GameObject:
   m_ObjectHideFlags: 0
@@ -4685,6 +4712,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &1788895405
 GameObject:
   m_ObjectHideFlags: 0
@@ -4809,6 +4837,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &1817589675
 GameObject:
   m_ObjectHideFlags: 0
@@ -4854,6 +4883,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &1823764947
 GameObject:
   m_ObjectHideFlags: 0
@@ -4932,6 +4962,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &1858543153
 GameObject:
   m_ObjectHideFlags: 0
@@ -5075,6 +5106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &1914010873
 GameObject:
   m_ObjectHideFlags: 0
@@ -5179,7 +5211,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1925904578}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.72, y: 0, z: 0}
+  m_LocalPosition: {x: -23.01, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1858543154}
@@ -5199,6 +5231,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &1960701953
 GameObject:
   m_ObjectHideFlags: 0
@@ -5323,6 +5356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &2002821111
 GameObject:
   m_ObjectHideFlags: 0
@@ -5398,6 +5432,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &2108663644
 GameObject:
   m_ObjectHideFlags: 0
@@ -5443,6 +5478,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &2114083375
 GameObject:
   m_ObjectHideFlags: 0
@@ -5488,6 +5524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 6913858032056350718, guid: c15ffc604511a9d429f98a892832fcfb, type: 3}
 --- !u!1 &2121483317
 GameObject:
   m_ObjectHideFlags: 0
@@ -5533,6 +5570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
+  bigLavaPrefab: {fileID: 0}
 --- !u!1 &2140965071
 GameObject:
   m_ObjectHideFlags: 0

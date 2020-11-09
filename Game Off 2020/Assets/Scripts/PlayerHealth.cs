@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PlayerHealth : MonoBehaviour
 {
 
-    public float health = 100f;
+    public float health = 10000f;
     public float damage;
 
     public Text text;

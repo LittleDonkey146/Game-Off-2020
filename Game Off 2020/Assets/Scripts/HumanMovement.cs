@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HumanMovement : MonoBehaviour
 {
@@ -12,9 +13,15 @@ public class HumanMovement : MonoBehaviour
 
     Rigidbody2D rb2D;
 
+    public Text text;
+    private string peopleSavedCounter;
+
+    public int peopleSaved;
+
     private void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
+        peopleSaved = 0;
     }
 
     private void Update()
@@ -29,7 +36,14 @@ public class HumanMovement : MonoBehaviour
             rb2D.isKinematic = false;
         }
 
-        Move();
+        //Move(); PROPABLY NOT NEEDED
+    }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        peopleSaved += 1;
+        peopleSavedCounter = peopleSaved.ToString();
+        text.text = peopleSavedCounter;
     }
 
     private void Move()
