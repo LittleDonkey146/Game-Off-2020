@@ -19,9 +19,10 @@ public class PlayerMovement : MonoBehaviour
     private int extraJump;
     public int extraJumpValue;
 
-    public AudioSource jump1;
-    public AudioSource jump2;
-    public AudioSource footstep;
+    public AudioSource _audioSource;
+    public AudioClip jump1;
+    public AudioClip jump2;
+    public AudioClip footstep;
 
     private bool playSFX = false; // Used in order to play the footstep soundFX
 
@@ -39,10 +40,15 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(moveInput * velocita, rb.velocity.y);
 
         // Footsteps Sound FX part
-        if (moveInput != 0 && playSFX == false)
+        if (moveInput != 0 && playSFX == false && isGrounded == true)
         {
             playSFX = true;
-            StartCoroutine(FootstepSFX());
+            _audioSource.clip = footstep;
+            StartCoroutine(PlaySFX());
+        }
+        else if(isGrounded == false)
+        {
+            playSFX = false;
         }
         else if (moveInput == 0 && playSFX == true)
         {
@@ -72,7 +78,10 @@ public class PlayerMovement : MonoBehaviour
             extraJump--;
 
             // Jumping Sound FX
-            StartCoroutine(Jump1SFX());
+            //_audioSource.clip = jump1;
+            isGrounded = false;
+            StartCoroutine(PlaySFX());
+            isGrounded = true;
         }
         else if (Input.GetKeyDown(KeyCode.Space) && extraJump == 0 && isGrounded == true)
         {
@@ -81,7 +90,22 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public IEnumerator FootstepSFX() // Footsteps Sound FX
+    public IEnumerator PlaySFX()
+    {
+        while (playSFX && isGrounded == true)
+        {
+            _audioSource.Play();
+            yield return new WaitForSeconds(0.5f);
+        }
+
+        if(isGrounded == false && Input.GetKeyDown(KeyCode.Space))
+        {
+            _audioSource.clip = jump1;
+            _audioSource.Play(); // WORK NEEDS TO BE DONE IN ORDER TO PLAY THE SECOND JUMP SOUND AS WELL
+        }
+    }
+
+    /*public IEnumerator FootstepSFX() // Footsteps Sound FX
     {
         while (playSFX == true)
         {
@@ -109,7 +133,7 @@ public class PlayerMovement : MonoBehaviour
     {
         yield return null;
         jump2.Play();
-    }
+    }*/
 
     void Flip()
     {
