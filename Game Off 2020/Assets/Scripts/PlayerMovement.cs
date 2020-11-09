@@ -79,9 +79,9 @@ public class PlayerMovement : MonoBehaviour
 
             // Jumping Sound FX
             //_audioSource.clip = jump1;
-            isGrounded = false;
+            
             StartCoroutine(PlaySFX());
-            isGrounded = true;
+            
         }
         else if (Input.GetKeyDown(KeyCode.Space) && extraJump == 0 && isGrounded == true)
         {
