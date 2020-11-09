@@ -1,24 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
 
     public float health = 100f;
+    public float damage;
+
+    public Text text;
+    private string healthtext;
 
     public GameObject lavaDrops;
-    public float damage;
 
     private void Start()
     {
-        damage = lavaDrops.GetComponent<LavaDrops>().damage;
-        //damage = lavaDrops.damage;
+        damage = lavaDrops.GetComponent<LavaDrops>().damage; //extremely bad technique, needs to be changes ASAP!!!!
     }
 
     private void Update()
     {
-        
+        ShowHealth();
+    }
+
+    private void ShowHealth()
+    {
+        healthtext = gameObject.GetComponent<PlayerHealth>().health.ToString();
+        text.text = healthtext + " HP";
     }
 
     public void TakeDamage(float damageTaken)

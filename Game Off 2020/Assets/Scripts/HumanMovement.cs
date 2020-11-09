@@ -10,23 +10,23 @@ public class HumanMovement : MonoBehaviour
     public GameObject[] waypoints;
     private int currentWP;
 
-    Rigidbody2D rigidbody2D;
+    Rigidbody2D rb2D;
 
     private void Start()
     {
-        rigidbody2D = GetComponent<Rigidbody2D>();
+        rb2D = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
     {
         if (gameObject.transform.parent != null)
         {
-            rigidbody2D.velocity = new Vector2(0,0); //NEEDS IMPROVEMENT, WILL CHECK LATER
-            rigidbody2D.isKinematic = true;
+            rb2D.velocity = new Vector2(0,0); //NEEDS IMPROVEMENT, WILL CHECK LATER
+            rb2D.isKinematic = true;
         }
         else
         {
-            rigidbody2D.isKinematic = false;
+            rb2D.isKinematic = false;
         }
 
         Move();
