@@ -10,6 +10,8 @@ public class LavaDrops : MonoBehaviour
 
     private Rigidbody2D rb2D;
 
+    public ParticleSystem explosionParticles;
+
     private void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
@@ -20,8 +22,11 @@ public class LavaDrops : MonoBehaviour
     {
         if(collision.gameObject.layer == 8 || collision.gameObject.layer == 9) //Layer 8 is the ground and Layer 9 is the player.
         {
+            //explosionParticles.Play();
+            //NEEDS SOME FIXING IN ORDER TO PLAY THE EXPLOSION PARTICLES FOR THE BIG LAVA DROPS
             Destroy(gameObject);
         }
     }
+
 
 }

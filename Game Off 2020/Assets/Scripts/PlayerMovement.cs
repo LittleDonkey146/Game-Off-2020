@@ -68,6 +68,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        Debug.Log(isGrounded);
         if (isGrounded == true)
         {
             extraJump = extraJumpValue;
@@ -92,13 +93,13 @@ public class PlayerMovement : MonoBehaviour
 
     public IEnumerator PlaySFX()
     {
-        while (playSFX && isGrounded == true)
+        while (/*playSFX &&*/ isGrounded == true)
         {
             _audioSource.Play();
             yield return new WaitForSeconds(0.5f);
         }
 
-        if(isGrounded == false && Input.GetKeyDown(KeyCode.Space))
+        if (/*isGrounded == true &&*/ Input.GetKeyDown(KeyCode.Space))
         {
             _audioSource.clip = jump1;
             _audioSource.Play(); // WORK NEEDS TO BE DONE IN ORDER TO PLAY THE SECOND JUMP SOUND AS WELL

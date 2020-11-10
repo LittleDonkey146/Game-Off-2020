@@ -45,4 +45,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaActivation: 0
   lavaPrefab: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
-  bigLavaPrefab: {fileID: 3129718645201065584, guid: 9c16f7f6aa7ed1242b4c42e95d7c2279, type: 3}
+  bigLavaPrefab: {fileID: 2864616020096125940, guid: 26061e4ad01903b4c838a261329d95bc, type: 3}
