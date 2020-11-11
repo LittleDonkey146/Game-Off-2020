@@ -68,7 +68,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(isGrounded);
         if (isGrounded == true)
         {
             extraJump = extraJumpValue;

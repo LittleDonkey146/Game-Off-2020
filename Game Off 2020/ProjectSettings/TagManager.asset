@@ -8,6 +8,7 @@ TagManager:
   - Lava Drops
   - Ground
   - Human Goal
+  - Big Lava
   layers:
   - Default
   - TransparentFX

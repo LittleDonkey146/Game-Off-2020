@@ -7,7 +7,7 @@ public class PlayerHealth : MonoBehaviour
 {
 
     public float health = 10000f;
-    public float damage;
+    //public float damage;
 
     public Text text;
     private string healthtext;
@@ -16,7 +16,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void Start()
     {
-        damage = lavaDrops.GetComponent<LavaDrops>().damage; //extremely bad technique, needs to be changes ASAP!!!!
+        //damage = lavaDrops.GetComponent<LavaDrops>().damage; //extremely bad technique, needs to be changed ASAP!!!!
     }
 
     private void Update()
@@ -48,7 +48,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if(collision.gameObject.tag == "Lava Drops")
         {
-            TakeDamage(damage);
+            //TakeDamage(damage);
         }
     }
 }
