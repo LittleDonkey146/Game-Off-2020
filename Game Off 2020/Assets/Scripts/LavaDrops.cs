@@ -25,8 +25,14 @@ public class LavaDrops : MonoBehaviour
 
     private void Update()
     {
-        Vector2 direction = rb2D.velocity;
-        transform.rotation = Quaternion.LookRotation(direction);
+        if (rb2D != null) // Used in order to stop if the big lava drops are destroyed so they do not return an error
+        {
+
+            Vector3 direction = rb2D.velocity;
+            transform.rotation = Quaternion.LookRotation(new Vector3(direction.x - 90, direction.y, direction.z));
+
+        }
+
     }
 
     public void DealDamage()
