@@ -35,7 +35,6 @@ public class HumanMovement : MonoBehaviour
         {
             rb2D.isKinematic = false;
         }
-
         //Move(); PROPABLY NOT NEEDED
     }
 
