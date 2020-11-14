@@ -6,48 +6,142 @@ public class PickingUp : MonoBehaviour
 {
     public Transform grabDetect;
     public Transform boxHolder;
-
-    private bool isPickedUp = false;
-
-    public float sphereRadius;
-    public float minDepth;
-    public float maxDepth;
+    public float arrayDist;
 
     void Update()
     {
 
-        PickUpMethod();
+        RaycastHit2D grabCheckRight = Physics2D.Raycast(grabDetect.position, Vector2.right * transform.localScale, arrayDist);
+        RaycastHit2D grabCheckLeft = Physics2D.Raycast(grabDetect.position, Vector2.left * transform.localScale, arrayDist);
 
-    }
 
-    private void PickUpMethod()
-    {
-        Collider2D collider = Physics2D.OverlapCircle(grabDetect.transform.position, sphereRadius, LayerMask.GetMask("Prefabs"), minDepth, maxDepth);
-
-        if (collider == null)
-        {
-
-            return;
-
-        }
-
-        else if (collider.tag == "Box")
+        if (grabCheckRight.collider != null && grabCheckRight.collider.tag == "Box")
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
-                if (isPickedUp == false)
+                grabCheckRight.collider.gameObject.transform.parent = boxHolder;
+                grabCheckRight.collider.gameObject.transform.position = boxHolder.position;
+
+            }
+            else
+            {
+                if (Input.GetKeyDown(KeyCode.G))
                 {
-                    collider.transform.parent = boxHolder;
-                    collider.transform.position = boxHolder.position;
-                    isPickedUp = true;
+                    grabCheckRight.collider.gameObject.transform.parent = null;
                 }
             }
+
         }
 
-        if (isPickedUp == true && Input.GetKeyDown(KeyCode.G))
+        if (grabCheckLeft.collider != null && grabCheckLeft.collider.tag == "Box")
         {
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                grabCheckLeft.collider.gameObject.transform.parent = boxHolder;
+                grabCheckLeft.collider.gameObject.transform.position = boxHolder.position;
+
+            }
+            else
+            {
+                if (Input.GetKeyDown(KeyCode.G))
+                {
+                    grabCheckLeft.collider.gameObject.transform.parent = null;
+                }
+            }
+
+        }
+    }
+    /*
+    public Transform grabDetect;
+    public Transform boxHolder;
+    public float arrayDist;
+    private bool isPickedUp = false;
+
+    void Update()
+    {
+
+        RaycastHit2D grabCheckRight = Physics2D.Raycast(grabDetect.position, Vector2.right * transform.localScale, arrayDist);
+        RaycastHit2D grabCheckLeft = Physics2D.Raycast(grabDetect.position, Vector2.left * transform.localScale, arrayDist);
+
+
+        if (grabCheckRight.collider != null && grabCheckRight.collider.tag == "Box")
+        {
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                Debug.Log("aek1");
+                grabCheckRight.collider.gameObject.transform.parent = boxHolder;
+                grabCheckRight.collider.gameObject.transform.position = boxHolder.position;
+                isPickedUp = true;
+
+            }
+            /*else if(Input.GetKeyDown(KeyCode.G))
+            {
+                //if (Input.GetKeyDown(KeyCode.G))
+                //{
+                    Debug.Log("pressed");
+                    grabCheckRight.collider.gameObject.transform.parent = null;
+                //}
+            }
+
+}
+
+        if (grabCheckLeft.collider != null && grabCheckLeft.collider.tag == "Box")
+        {
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                Debug.Log("aek2");
+                grabCheckLeft.collider.gameObject.transform.parent = boxHolder;
+                grabCheckLeft.collider.gameObject.transform.position = boxHolder.position;
+                isPickedUp = true;
+
+            }
+            /*else if (Input.GetKeyDown(KeyCode.G) && boxHolder != null)
+            {
+                // (Input.GetKeyDown(KeyCode.G) && boxHolder != null)
+                //{
+                    Debug.Log("pressed");
+                    grabCheckLeft.collider.gameObject.transform.parent = null;
+                //}
+            }
+
+        }
+
+        if(isPickedUp == true && Input.GetKeyDown(KeyCode.G))
+        {
+            Debug.Log("pressed");
             boxHolder.GetChild(0).transform.SetParent(null);
             isPickedUp = false;
         }
+
+        Debug.Log(grabCheckRight.collider.gameObject.transform.position);
     }
+
+    /*the value is 0.8, but it can change, based on the scale of our robot. Where it is now, it detects the pickup object, when it's close to our player
+   private float minDepth = -2f;
+   private float maxDepth = 2f;
+   private float sphereRadius = 0.8f;
+
+   public Transform parent;
+
+   public GameObject child;
+
+   private void Update()
+   {
+       CheckForCollision();
+   }
+
+   private void CheckForCollision()
+   {
+       if(Physics2D.OverlapCircle(transform.position, sphereRadius, LayerMask.GetMask("Pickup"), minDepth, maxDepth))
+       {
+           if(Input.GetKey(KeyCode.F))
+           {
+               child.transform.SetParent(parent, true); //NEEDS REVIEW LATER
+           }
+           else if (Input.GetKey(KeyCode.G))
+           {
+               child.transform.SetParent(null);
+           }
+       }
+   }*/
 }
