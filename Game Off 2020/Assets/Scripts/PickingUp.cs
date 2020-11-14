@@ -24,7 +24,11 @@ public class PickingUp : MonoBehaviour
     {
         Collider2D collider = Physics2D.OverlapCircle(transform.position, sphereRadius, LayerMask.GetMask("Prefabs"), minDepth, maxDepth);
 
-        Debug.Log(collider.tag);
+        if (isPickedUp == true && Input.GetKeyDown(KeyCode.G))
+        {
+            boxHolder.GetChild(0).transform.SetParent(null);
+            isPickedUp = false;
+        }
 
         if (collider == null)
         {
@@ -32,17 +36,20 @@ public class PickingUp : MonoBehaviour
             return;
 
         }
-        else if (collider.tag == "Box" && Input.GetKeyDown(KeyCode.F))
+        else if (collider.tag == "Box")
         {
-            collider.transform.parent = boxHolder;
-            collider.transform.position = boxHolder.position;
-            isPickedUp = true;
+            if(Input.GetKeyDown(KeyCode.F))
+            {
+                if (isPickedUp == false)
+                {
+                    collider.transform.parent = boxHolder;
+                    collider.transform.position = boxHolder.position;
+                    isPickedUp = true;
+                }
+                
+            }
+            
         }
-
-        if (isPickedUp == true && Input.GetKeyDown(KeyCode.G))
-        {
-            boxHolder.GetChild(0).transform.SetParent(null);
-            isPickedUp = false;
-        }
+        
     }
 }
