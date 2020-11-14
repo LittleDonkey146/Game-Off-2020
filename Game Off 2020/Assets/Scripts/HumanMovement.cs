@@ -42,7 +42,7 @@ public class HumanMovement : MonoBehaviour
     {
         peopleSaved += 1;
         peopleSavedCounter = peopleSaved.ToString();
-        text.text = peopleSavedCounter;
+        text.text = peopleSavedCounter; 
     }
 
     private void Move()

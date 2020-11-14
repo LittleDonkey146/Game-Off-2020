@@ -7,6 +7,54 @@ public class PickingUp : MonoBehaviour
     public Transform grabDetect;
     public Transform boxHolder;
     public float arrayDist;
+
+    void Update()
+    {
+
+        RaycastHit2D grabCheckRight = Physics2D.Raycast(grabDetect.position, Vector2.right * transform.localScale, arrayDist);
+        RaycastHit2D grabCheckLeft = Physics2D.Raycast(grabDetect.position, Vector2.left * transform.localScale, arrayDist);
+
+
+        if (grabCheckRight.collider != null && grabCheckRight.collider.tag == "Box")
+        {
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                grabCheckRight.collider.gameObject.transform.parent = boxHolder;
+                grabCheckRight.collider.gameObject.transform.position = boxHolder.position;
+
+            }
+            else
+            {
+                if (Input.GetKeyDown(KeyCode.G))
+                {
+                    grabCheckRight.collider.gameObject.transform.parent = null;
+                }
+            }
+
+        }
+
+        if (grabCheckLeft.collider != null && grabCheckLeft.collider.tag == "Box")
+        {
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                grabCheckLeft.collider.gameObject.transform.parent = boxHolder;
+                grabCheckLeft.collider.gameObject.transform.position = boxHolder.position;
+
+            }
+            else
+            {
+                if (Input.GetKeyDown(KeyCode.G))
+                {
+                    grabCheckLeft.collider.gameObject.transform.parent = null;
+                }
+            }
+
+        }
+    }
+    /*
+    public Transform grabDetect;
+    public Transform boxHolder;
+    public float arrayDist;
     private bool isPickedUp = false;
 
     void Update()
@@ -33,9 +81,9 @@ public class PickingUp : MonoBehaviour
                     Debug.Log("pressed");
                     grabCheckRight.collider.gameObject.transform.parent = null;
                 //}
-            }*/
+            }
 
-        }
+}
 
         if (grabCheckLeft.collider != null && grabCheckLeft.collider.tag == "Box")
         {
@@ -54,7 +102,7 @@ public class PickingUp : MonoBehaviour
                     Debug.Log("pressed");
                     grabCheckLeft.collider.gameObject.transform.parent = null;
                 //}
-            }*/
+            }
 
         }
 
