@@ -9,6 +9,7 @@ TagManager:
   - Ground
   - Human Goal
   - Big Lava
+  - Box
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - Pickup
   - Lava Drops
   - Human Goal
-  - 
+  - Prefabs
   - 
   - 
   - 

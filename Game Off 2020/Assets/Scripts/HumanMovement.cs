@@ -11,7 +11,7 @@ public class HumanMovement : MonoBehaviour
     public GameObject[] waypoints;
     private int currentWP;
 
-    Rigidbody2D rb2D;
+    //Rigidbody2D rb2D;
 
     public Text text;
     private string peopleSavedCounter;
@@ -20,11 +20,11 @@ public class HumanMovement : MonoBehaviour
 
     private void Start()
     {
-        rb2D = GetComponent<Rigidbody2D>();
+        //rb2D = GetComponent<Rigidbody2D>();
         peopleSaved = 0;
     }
 
-    private void Update()
+    /*private void Update()
     {
         if (gameObject.transform.parent != null)
         {
@@ -36,7 +36,7 @@ public class HumanMovement : MonoBehaviour
             rb2D.isKinematic = false;
         }
         //Move(); PROPABLY NOT NEEDED
-    }
+    }*/
 
     void OnTriggerEnter2D(Collider2D collider)
     {
