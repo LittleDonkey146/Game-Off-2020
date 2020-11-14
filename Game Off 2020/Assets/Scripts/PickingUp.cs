@@ -7,6 +7,7 @@ public class PickingUp : MonoBehaviour
     public Transform grabDetect;
     public Transform boxHolder;
     public float arrayDist;
+    private bool isPickedUp = false;
 
     void Update()
     {
@@ -19,19 +20,20 @@ public class PickingUp : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
-                Debug.Log("pressed");
+                Debug.Log("aek1");
                 grabCheckRight.collider.gameObject.transform.parent = boxHolder;
                 grabCheckRight.collider.gameObject.transform.position = boxHolder.position;
+                isPickedUp = true;
 
             }
-            else
+            /*else if(Input.GetKeyDown(KeyCode.G))
             {
-                if (Input.GetKeyDown(KeyCode.G))
-                {
+                //if (Input.GetKeyDown(KeyCode.G))
+                //{
                     Debug.Log("pressed");
                     grabCheckRight.collider.gameObject.transform.parent = null;
-                }
-            }
+                //}
+            }*/
 
         }
 
@@ -39,21 +41,31 @@ public class PickingUp : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
-                Debug.Log("pressed");
+                Debug.Log("aek2");
                 grabCheckLeft.collider.gameObject.transform.parent = boxHolder;
                 grabCheckLeft.collider.gameObject.transform.position = boxHolder.position;
+                isPickedUp = true;
 
             }
-            else
+            /*else if (Input.GetKeyDown(KeyCode.G) && boxHolder != null)
             {
-                if (Input.GetKeyDown(KeyCode.G))
-                {
+                // (Input.GetKeyDown(KeyCode.G) && boxHolder != null)
+                //{
                     Debug.Log("pressed");
                     grabCheckLeft.collider.gameObject.transform.parent = null;
-                }
-            }
+                //}
+            }*/
 
         }
+
+        if(isPickedUp == true && Input.GetKeyDown(KeyCode.G))
+        {
+            Debug.Log("pressed");
+            boxHolder.GetChild(0).transform.SetParent(null);
+            isPickedUp = false;
+        }
+
+        Debug.Log(grabCheckRight.collider.gameObject.transform.position);
     }
 
     /*the value is 0.8, but it can change, based on the scale of our robot. Where it is now, it detects the pickup object, when it's close to our player
