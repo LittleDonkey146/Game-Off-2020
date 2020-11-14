@@ -8,9 +8,6 @@ public class HumanMovement : MonoBehaviour
 
     public float speed = 3f;
 
-    public GameObject[] waypoints;
-    private int currentWP;
-
     //Rigidbody2D rb2D;
 
     public Text text;
@@ -35,7 +32,6 @@ public class HumanMovement : MonoBehaviour
         {
             rb2D.isKinematic = false;
         }
-        //Move(); PROPABLY NOT NEEDED
     }*/
 
     void OnTriggerEnter2D(Collider2D collider)
@@ -43,21 +39,5 @@ public class HumanMovement : MonoBehaviour
         peopleSaved += 1;
         peopleSavedCounter = peopleSaved.ToString();
         text.text = peopleSavedCounter;
-    }
-
-    private void Move()
-    {
-        if (Vector2.Distance(gameObject.transform.position, waypoints[currentWP].transform.position) < 1) // Distance between the human and the waypoint.
-        {
-            currentWP += 1;
-        }
-
-        if (currentWP >= waypoints.Length)
-        {
-            currentWP = 0;
-        }
-        transform.LookAt(waypoints[currentWP].transform.position);
-
-        transform.Translate(0, 0, speed * Time.deltaTime); // The movement is on z because LookAt works with the Z axis
     }
 }

@@ -18,7 +18,10 @@ public class GravityScript : MonoBehaviour
         }
         else
         {
-            rb2D.isKinematic = false;
+            rb2D.isKinematic = false;   
         }
+
+        //transform.position = new Vector3(transform.position.x, transform.position.y, 0f);
+        //gameObject.transform.rotation = Quaternion.identity;
     }
 }
