@@ -4045,6 +4045,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabDetect: {fileID: 600123238}
   boxHolder: {fileID: 326658131}
+  isPickedUp: 0
   sphereRadius: 0.7
   minDepth: -10
   maxDepth: 10
@@ -5045,7 +5046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  text: {fileID: 0}
+  text: {fileID: 9169747}
   peopleSaved: 0
 --- !u!50 &1700288622
 Rigidbody2D:
@@ -5080,6 +5081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8e8b329d76de764686cc191f10838f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPickedUp2: {fileID: 0}
 --- !u!1001 &1706769103
 PrefabInstance:
   m_ObjectHideFlags: 0

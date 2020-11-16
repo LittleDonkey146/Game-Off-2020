@@ -7,7 +7,7 @@ public class PickingUp : MonoBehaviour
     public Transform grabDetect;
     public Transform boxHolder;
 
-    private bool isPickedUp = false;
+    public bool isPickedUp = false;
 
     public float sphereRadius;
     public float minDepth;
