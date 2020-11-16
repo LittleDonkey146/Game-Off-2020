@@ -5,7 +5,12 @@ using UnityEngine;
 public class GravityScript : MonoBehaviour
 {
     Rigidbody2D rb2D;
-    public PickingUp isPickedUp2;
+    private PickingUp isPickedUp2;
+
+    private void Awake()
+    {
+        isPickedUp2 = FindObjectOfType<PickingUp>();
+    }
 
     private void Start()
     {
@@ -30,7 +35,7 @@ public class GravityScript : MonoBehaviour
         if (gameObject.transform.parent != null) 
         {
             Destroy(gameObject);
-            isPickedUp2.isPickedUp = false;
+            isPickedUp2.updateVariable();
             //set the bool variable of "PickingUp" script to false (isPickedUp == false);
         }
     }

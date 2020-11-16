@@ -52,4 +52,9 @@ public class PickingUp : MonoBehaviour
         }
         
     }
+
+    public void updateVariable() 
+    {
+        isPickedUp = false;
+    }
 }

@@ -5081,7 +5081,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8e8b329d76de764686cc191f10838f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPickedUp2: {fileID: 0}
 --- !u!1001 &1706769103
 PrefabInstance:
   m_ObjectHideFlags: 0
