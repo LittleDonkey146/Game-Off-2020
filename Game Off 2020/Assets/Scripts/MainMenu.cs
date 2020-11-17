@@ -11,7 +11,6 @@ public class MainMenu : MonoBehaviour
     public AudioClip homeScreen;
     public AudioClip clickSound;
 
-
     private void Awake()
     {
         audioSource.clip = homeScreen;

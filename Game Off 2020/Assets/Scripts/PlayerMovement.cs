@@ -19,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
     private int extraJump;
     public int extraJumpValue;
 
+    private  bool isPlaying = false;
+
     public AudioSource _audioSource;
     public AudioClip jump1;
     public AudioClip jump2;
@@ -27,7 +29,9 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         extraJump = extraJumpValue;
-        rb = GetComponent<Rigidbody2D>(); 
+        rb = GetComponent<Rigidbody2D>();
+
+        //StartCoroutine(PlaySoundsCoroutine());
     }
 
     void FixedUpdate() 
@@ -36,6 +40,8 @@ public class PlayerMovement : MonoBehaviour
 
         moveInput = Input.GetAxisRaw("Horizontal"); 
         rb.velocity = new Vector2(moveInput * velocita, rb.velocity.y);
+
+        //_audioSource.clip = footstep;
 
         if (facingRight == false && moveInput > 0) 
         {
@@ -51,6 +57,9 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
 
+        
+
+
         if (isGrounded == true)
         {
             extraJump = extraJumpValue;
@@ -58,11 +67,46 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && extraJump > 0)
         {
+            _audioSource.clip = jump1;
+            _audioSource.Play();
             extraJump--;
 
+            _audioSource.loop = false;
+
+            
             rb.velocity = Vector2.up * jumpForce;
+
+        }
+
+        if (_audioSource.isPlaying == false && isGrounded == true && moveInput != 0)
+        {
+            _audioSource.clip = footstep;
+            _audioSource.loop = true;
+
+            _audioSource.Play();
+        }
+        else if (_audioSource.isPlaying == true && isGrounded == true && moveInput == 0)
+        {
+            _audioSource.loop = false;
+            _audioSource.clip = jump1;
+
         }
     }
+
+    public void PlaySFX()
+    {
+        _audioSource.Play();
+    }
+
+    /*public IEnumerator PlaySoundsCoroutine()
+    {
+        while ( SOMETHING )
+        {
+            PlaySFX();
+            yield return new WaitForSeconds(0.5f);
+        }
+        
+    }*/
 
     void Flip()
     {
