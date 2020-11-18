@@ -1,12 +1,12 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!28 &-8198615375865179861
+--- !u!28 &-3750604019209491146
 Texture2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: slkscre SDF Atlas
+  m_Name: slkscr SDF Atlas
   m_ImageContentsHash:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
@@ -55,11 +55,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: slkscre SDF
+  m_Name: slkscr SDF
   m_EditorClassIdentifier: 
-  hashCode: -197365214
-  material: {fileID: 5567960072139458037}
-  materialHashCode: -1218532670
+  hashCode: -2090629945
+  material: {fileID: 1522749846225862277}
+  materialHashCode: 1825133191
   m_Version: 1.1.0
   m_SourceFontFileGUID: 4357bb0bb2181d84288365bbb8383291
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 4357bb0bb2181d84288365bbb8383291, type: 3}
@@ -1798,7 +1798,7 @@ MonoBehaviour:
     m_GlyphIndex: 97
     m_Scale: 1
   m_AtlasTextures:
-  - {fileID: -8198615375865179861}
+  - {fileID: -3750604019209491146}
   m_AtlasTextureIndex: 0
   m_IsMultiAtlasTexturesEnabled: 0
   m_UsedGlyphRects:
@@ -2350,16 +2350,16 @@ MonoBehaviour:
   boldSpacing: 7
   italicStyle: 35
   tabSize: 10
---- !u!21 &5567960072139458037
+--- !u!21 &1522749846225862277
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: slkscre SDF Material
+  m_Name: slkscr SDF Material
   m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
-  m_ShaderKeywords: UNDERLAY_ON
+  m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -2382,7 +2382,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: -8198615375865179861}
+        m_Texture: {fileID: -3750604019209491146}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OutlineTex:
@@ -2420,7 +2420,7 @@ Material:
     - _Reflectivity: 10
     - _ScaleRatioA: 0.9
     - _ScaleRatioB: 0.73125
-    - _ScaleRatioC: 0.52232146
+    - _ScaleRatioC: 0.73125
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0
@@ -2434,9 +2434,9 @@ Material:
     - _TextureHeight: 1024
     - _TextureWidth: 1024
     - _UnderlayDilate: 0
-    - _UnderlayOffsetX: 1
-    - _UnderlayOffsetY: -1
-    - _UnderlaySoftness: 0.4
+    - _UnderlayOffsetX: 0
+    - _UnderlayOffsetY: 0
+    - _UnderlaySoftness: 0
     - _VertexOffsetX: 0
     - _VertexOffsetY: 0
     - _WeightBold: 0.75
@@ -2451,5 +2451,5 @@ Material:
     - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
-    - _UnderlayColor: {r: 0, g: 0, b: 0, a: 0.79607844}
+    - _UnderlayColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_BuildTextureStacks: []

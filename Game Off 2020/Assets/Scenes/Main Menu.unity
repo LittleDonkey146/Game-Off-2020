@@ -502,5 +502,9 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2806914226159290536, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
+      propertyPath: m_text
+      value: GAME NAME
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
