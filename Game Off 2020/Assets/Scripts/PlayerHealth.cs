@@ -16,7 +16,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void Start()
     {
-        //damage = lavaDrops.GetComponent<LavaDrops>().damage; //extremely bad technique, needs to be changed ASAP!!!!
+
     }
 
     private void Update()
