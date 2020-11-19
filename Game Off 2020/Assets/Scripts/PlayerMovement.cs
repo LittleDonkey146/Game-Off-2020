@@ -19,12 +19,14 @@ public class PlayerMovement : MonoBehaviour
     private int extraJump;
     public int extraJumpValue;
 
-    private  bool isPlaying = false;
+    private bool isPlaying = false;
 
     public AudioSource _audioSource;
     public AudioClip jump1;
     public AudioClip jump2;
     public AudioClip footstep;
+
+    public Animator anim;
 
     void Start()
     {
@@ -42,24 +44,33 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(moveInput * velocita, rb.velocity.y);
 
         //_audioSource.clip = footstep;
+        Debug.Log(moveInput);
 
-        if (facingRight == false && moveInput > 0) 
+        if (facingRight == false && moveInput > 0)
         {
-            Flip(); 
+            anim.SetBool("running", true);           
+            Flip();
         }
-        else if (facingRight == true && moveInput < 0) 
+        
+        if (facingRight == true && moveInput < 0)
         {
-            Flip(); 
+            anim.SetBool("running", true);         
+            Flip();
+        }
+
+        if (moveInput == 0)
+        {
+            anim.SetBool("running", false);
+        }
+        else 
+        {
+            anim.SetBool("running", true);
         }
 
     }
 
     void Update()
     {
-
-        
-
-
         if (isGrounded == true)
         {
             extraJump = extraJumpValue;
@@ -110,7 +121,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Flip()
     {
-
         facingRight = !facingRight;
 
         if (facingRight)
