@@ -502,9 +502,36 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2806914225618246406, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2806914226066180416}
+    - target: {fileID: 2806914225618246406, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MainMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2806914225618246406, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Options
+      objectReference: {fileID: 0}
+    - target: {fileID: 2806914225618246406, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2806914226159290536, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
       propertyPath: m_text
       value: GAME NAME
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
+--- !u!114 &2806914226066180416 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2806914224797270690, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
+  m_PrefabInstance: {fileID: 2806914226066180415}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27dac13813821c24cba5d5dac7e1cd42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

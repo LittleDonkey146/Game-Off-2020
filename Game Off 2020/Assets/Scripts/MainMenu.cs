@@ -30,6 +30,11 @@ public class MainMenu : MonoBehaviour
     }
 
     //The options button is not yet ready
+    public void Options()
+    {
+        SceneManager.LoadScene("Options");
+    }
+
 
     // Credits Button 
     public void Credits()
