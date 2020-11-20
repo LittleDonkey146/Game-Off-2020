@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     private int extraJump;
     public int extraJumpValue;
 
-    private bool isPlaying = false;
+    //private bool isPlaying = false;
 
     public AudioSource _audioSource;
     public AudioClip jump1;
