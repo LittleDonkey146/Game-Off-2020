@@ -298,7 +298,7 @@ AudioSource:
   m_GameObject: {fileID: 1839871878}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 5cf3f371c804f0d43bb51f689336cae2, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -406,6 +406,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2806914224771011229, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 5cf3f371c804f0d43bb51f689336cae2, type: 2}
+    - target: {fileID: 2806914224795304457, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 5cf3f371c804f0d43bb51f689336cae2, type: 2}
     - target: {fileID: 2806914224797270686, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -502,6 +510,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2806914225490824215, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 5cf3f371c804f0d43bb51f689336cae2, type: 2}
     - target: {fileID: 2806914225618246406, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -518,6 +530,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2806914225618246407, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 5cf3f371c804f0d43bb51f689336cae2, type: 2}
     - target: {fileID: 2806914226159290536, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
       propertyPath: m_text
       value: GAME NAME
