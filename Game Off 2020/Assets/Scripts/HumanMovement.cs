@@ -36,8 +36,11 @@ public class HumanMovement : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        peopleSaved += 1;
-        peopleSavedCounter = peopleSaved.ToString();
-        text.text = peopleSavedCounter;
+        if (collider.CompareTag("Human Goal")) 
+        {
+            peopleSaved += 1;
+            peopleSavedCounter = peopleSaved.ToString();
+            text.text = peopleSavedCounter;
+        }
     }
 }
