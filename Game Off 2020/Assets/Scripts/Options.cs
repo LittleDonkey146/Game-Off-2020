@@ -12,11 +12,6 @@ public class Options : MonoBehaviour
     public Slider slider;
     public float sliderValue;
 
-    private void Start()
-    {
-
-    }
-
     public void SetVolume(float volume)
     {
         
