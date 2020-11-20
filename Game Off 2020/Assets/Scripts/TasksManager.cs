@@ -11,8 +11,12 @@ public class TasksManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        tasksDone += 1;
-        tasksDoneCounter = tasksDone.ToString();
-        text.text = tasksDoneCounter;
+        if (collision.CompareTag("TaskGameObject")) 
+        {
+            tasksDone += 1;
+            tasksDoneCounter = tasksDone.ToString();
+            text.text = tasksDoneCounter;
+        }
     }
+
 }

@@ -32,9 +32,10 @@ public class GravityScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Destroy(gameObject);
+
         if (gameObject.transform.parent != null) 
         {
-            Destroy(gameObject);
             isPickedUp2.updateVariable();
             //set the bool variable of "PickingUp" script to false (isPickedUp == false);
         }
