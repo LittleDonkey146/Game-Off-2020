@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -7654140961058304837}
   m_Layer: 13
   m_Name: Hexagon
-  m_TagString: Box
+  m_TagString: TaskGameObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

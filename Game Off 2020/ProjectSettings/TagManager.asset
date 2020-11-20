@@ -10,6 +10,7 @@ TagManager:
   - Human Goal
   - Big Lava
   - Box
+  - TaskGameObject
   layers:
   - Default
   - TransparentFX

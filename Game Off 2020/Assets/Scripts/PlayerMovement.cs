@@ -44,7 +44,6 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(moveInput * velocita, rb.velocity.y);
 
         //_audioSource.clip = footstep;
-        Debug.Log(moveInput);
 
         if (facingRight == false && moveInput > 0)
         {

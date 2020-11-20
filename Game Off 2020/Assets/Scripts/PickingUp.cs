@@ -36,7 +36,7 @@ public class PickingUp : MonoBehaviour
             return;
 
         }
-        else if (collider.tag == "Box")
+        else if (collider.tag == "Box" || collider.tag == "TaskGameObject")
         {
             if(Input.GetKeyDown(KeyCode.F))
             {
