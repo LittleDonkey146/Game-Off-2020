@@ -7,6 +7,7 @@ public class PauseMenu : MonoBehaviour
 {
 
     public GameObject pauseMenu;
+    public AudioSource audioSource;
 
     public bool activatedMenu;
 
@@ -36,6 +37,7 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0f;
         pauseMenu.SetActive(true);
         pauseMenu.transform.position = new Vector3(960, 540, 0); // Moves the Pause Menu in the center of the canvas
+        audioSource.Pause();
 
     }
 
@@ -45,6 +47,7 @@ public class PauseMenu : MonoBehaviour
 
         Time.timeScale = 1f;
         pauseMenu.SetActive(false);
+        audioSource.UnPause();
 
         activatedMenu = false;
     }
