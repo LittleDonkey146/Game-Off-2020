@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -13,11 +14,6 @@ public class PlayerHealth : MonoBehaviour
     private string healthtext;
 
     public GameObject lavaDrops;
-
-    private void Start()
-    {
-
-    }
 
     private void Update()
     {
@@ -42,6 +38,7 @@ public class PlayerHealth : MonoBehaviour
     public void Die()
     {
         Destroy(gameObject);
+        SceneManager.LoadScene("Game Over Scene");
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

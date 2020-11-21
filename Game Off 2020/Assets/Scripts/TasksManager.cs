@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TasksManager : MonoBehaviour
 {
@@ -16,6 +17,14 @@ public class TasksManager : MonoBehaviour
             tasksDone += 1;
             tasksDoneCounter = tasksDone.ToString();
             text.text = tasksDoneCounter;
+        }
+    }
+
+    public void Update()
+    {
+        if (tasksDone == 4) 
+        {
+            SceneManager.LoadScene("Win Scene");
         }
     }
 
