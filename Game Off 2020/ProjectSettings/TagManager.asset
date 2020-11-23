@@ -11,6 +11,9 @@ TagManager:
   - Big Lava
   - Box
   - TaskGameObject
+  - FuelGameObject
+  - MetalGameObject
+  - People
   layers:
   - Default
   - TransparentFX

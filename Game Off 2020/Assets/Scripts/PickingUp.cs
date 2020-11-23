@@ -13,11 +13,14 @@ public class PickingUp : MonoBehaviour
     public float minDepth;
     public float maxDepth;
 
+    public AudioSource audioSource;
+    public AudioClip fuelAudio;
+    public AudioClip metalAudio;
+    public AudioClip peopleAudio;
+
     void Update()
     {
-
-        PickUpMethod();
-        
+        PickUpMethod();        
     }
 
     private void PickUpMethod()
@@ -32,14 +35,33 @@ public class PickingUp : MonoBehaviour
 
         if (collider == null)
         {
-
             return;
-
         }
-        else if (collider.tag == "Box" || collider.tag == "TaskGameObject")
+        else if (collider.tag == "People" || collider.tag == "FuelGameObject" || collider.tag == "MetalGameObject")
         {
             if(Input.GetKeyDown(KeyCode.F))
             {
+                if (collider.tag == "FuelGameObject" && isPickedUp == false)
+                {
+                    audioSource.clip = fuelAudio;
+                    audioSource.Play();
+                    audioSource.loop = false;
+                }
+
+                if (collider.tag == "MetalGameObject" && isPickedUp == false)
+                {
+                    audioSource.clip = metalAudio;
+                    audioSource.Play();
+                    audioSource.loop = false;
+                }
+
+                if (collider.tag == "People" && isPickedUp == false)
+                {
+                    audioSource.clip = peopleAudio;
+                    audioSource.Play();
+                    audioSource.loop = false;
+                }
+
                 if (isPickedUp == false)
                 {
                     collider.transform.parent = boxHolder;

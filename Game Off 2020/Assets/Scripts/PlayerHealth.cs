@@ -18,6 +18,12 @@ public class PlayerHealth : MonoBehaviour
 
     public GameObject lavaDrops;
 
+    public AudioSource audioSource;
+    public AudioClip damageAudio;
+    public AudioClip healthAlert;
+
+    private bool playIt = true;
+
     private void Update()
     {
         ShowHealth();
@@ -31,7 +37,29 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(float damageTaken)
     {
-        health -= damageTaken;
+        //this is if a lava bullet hit the player
+
+        if (audioSource.isPlaying != healthAlert) 
+        {
+            health -= damageTaken;
+
+            audioSource.clip = damageAudio;
+            audioSource.Play();
+
+            audioSource.loop = false;
+        }
+
+        //this if the health is below like 9500
+        if (health < 9500 && playIt == true) 
+        {
+            playIt = false;
+
+            audioSource.clip = healthAlert;
+            audioSource.Play();
+
+            audioSource.loop = false;      
+        }  
+
         if (health <= 0)
         {
             Die();

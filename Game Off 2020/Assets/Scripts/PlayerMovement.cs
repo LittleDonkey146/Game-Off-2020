@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     public AudioClip footstep;
 
     public Animator anim;
+    private int cont = 0;
 
     void Start()
     {
@@ -81,11 +82,20 @@ public class PlayerMovement : MonoBehaviour
             _audioSource.Play();
             extraJump--;
 
-            _audioSource.loop = false;
-
-            
+            _audioSource.loop = false;         
             rb.velocity = Vector2.up * jumpForce;
 
+            cont++;
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded == false && cont > 0) 
+        {
+            cont = 0;
+            _audioSource.clip = jump2;
+            _audioSource.Play();
+
+            _audioSource.loop = false;
         }
 
         if (_audioSource.isPlaying == false && isGrounded == true && moveInput != 0)
@@ -103,7 +113,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public void PlaySFX()
+    /*public void PlaySFX()
     {
         _audioSource.Play();
     }

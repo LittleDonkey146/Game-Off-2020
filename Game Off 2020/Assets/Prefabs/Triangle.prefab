@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8769821307104371546}
   m_Layer: 13
   m_Name: Triangle
-  m_TagString: TaskGameObject
+  m_TagString: MetalGameObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

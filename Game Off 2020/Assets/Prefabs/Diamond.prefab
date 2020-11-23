@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -6777424644625609067}
   m_Layer: 13
   m_Name: Diamond
-  m_TagString: TaskGameObject
+  m_TagString: FuelGameObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
