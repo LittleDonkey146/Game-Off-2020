@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class TimeController : MonoBehaviour
 {
@@ -12,7 +13,8 @@ public class TimeController : MonoBehaviour
 
     public float timeStart = 60;
 
-    public Text textBox;
+    public TextMeshProUGUI textBox;
+    //public Text textBox;
 
     public void Update()
     {
@@ -25,7 +27,7 @@ public class TimeController : MonoBehaviour
         if (timeStart > 0)
         {
             timeStart -= Time.deltaTime;
-            textBox.text = Mathf.Round(timeStart).ToString();
+            textBox.text = "Time Left " + Mathf.Round(timeStart).ToString();
         }
     }
 

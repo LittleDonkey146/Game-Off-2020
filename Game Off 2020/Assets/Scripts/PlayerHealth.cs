@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -10,7 +11,9 @@ public class PlayerHealth : MonoBehaviour
     public float health = 10000f;
     //public float damage;
 
-    public Text text;
+    public TextMeshProUGUI text;
+
+    //public Text text;
     private string healthtext;
 
     public GameObject lavaDrops;

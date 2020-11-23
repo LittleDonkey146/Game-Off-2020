@@ -20,12 +20,6 @@ public class MainMenu : MonoBehaviour
     // The Start Game button
     public void StartGame() 
     {
-        StartCoroutine(WaitForTime());
-    }
-
-    public IEnumerator WaitForTime()
-    {
-        yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene("Main Game");
     }
 

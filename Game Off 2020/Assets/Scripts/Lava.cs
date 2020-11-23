@@ -8,20 +8,18 @@ public class Lava : MonoBehaviour
     public GameObject lavaPrefab; //The lava prefab from our "Prefabs" folder in unity
     public GameObject bigLavaPrefab;
 
+    private void Awake()
+    {
+        lavaActivation = true;
+        StartCoroutine(LavaInstantiation());
+        StartCoroutine(BigLava());
+    }
+
     void Start()
     {
 
     }
 
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.T)) //Used just for starting the lava rain
-        {
-            lavaActivation = true;
-            StartCoroutine(LavaInstantiation());
-            StartCoroutine(BigLava());
-        }
-    }
 
     // The method for creating the lava rain
     public IEnumerator LavaInstantiation()

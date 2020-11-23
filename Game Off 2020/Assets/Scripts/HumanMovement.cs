@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class HumanMovement : MonoBehaviour
 {
@@ -10,7 +11,8 @@ public class HumanMovement : MonoBehaviour
 
     //Rigidbody2D rb2D;
 
-    public Text text;
+    public TextMeshProUGUI text;
+    //public Text text;
     private string peopleSavedCounter;
 
     public int peopleSaved;
@@ -34,13 +36,13 @@ public class HumanMovement : MonoBehaviour
         }
     }*/
 
-    void OnTriggerEnter2D(Collider2D collider)
+    void OnTriggerEnter2D(Collider2D collider) //NEEDS TO BE REWORKED, NOT WORKING AS IT SHOULD
     {
         if (collider.CompareTag("Human Goal")) 
         {
             peopleSaved += 1;
             peopleSavedCounter = peopleSaved.ToString();
-            text.text = peopleSavedCounter;
+            text.text = "People saved: " + peopleSavedCounter;
         }
     }
 }
