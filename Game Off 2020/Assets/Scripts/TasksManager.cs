@@ -15,7 +15,7 @@ public class TasksManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("TaskGameObject")) 
+        if (collision.CompareTag("FuelGameObject") || collision.CompareTag("MetalGameObject")) 
         {
             tasksDone += 1;
             tasksDoneCounter = tasksDone.ToString();
