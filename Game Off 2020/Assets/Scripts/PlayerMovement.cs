@@ -96,6 +96,7 @@ public class PlayerMovement : MonoBehaviour
             _audioSource.Play();
 
             _audioSource.loop = false;
+            Debug.Log("AEK1");
         }
 
         if (_audioSource.isPlaying == false && isGrounded == true && moveInput != 0)
@@ -109,7 +110,7 @@ public class PlayerMovement : MonoBehaviour
         {
             _audioSource.loop = false;
             _audioSource.clip = jump1;
-
+            Debug.Log("AEK2");
         }
     }
 
