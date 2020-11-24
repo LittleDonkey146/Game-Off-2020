@@ -17,7 +17,8 @@ public class LevelLoader : MonoBehaviour
             || scene.name == "Game Over Scene"
             || scene.name == "Main Menu"
             || scene.name == "Options"
-            || scene.name == "Win Scene")
+            || scene.name == "Win Scene"
+            || scene.name == "Test")
         {
             StartCoroutine(changeScene());
         }
