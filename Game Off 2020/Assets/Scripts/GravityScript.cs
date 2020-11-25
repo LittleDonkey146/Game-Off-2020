@@ -32,7 +32,10 @@ public class GravityScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(gameObject);
+        if (collision.CompareTag("Human Goal")) 
+        {
+            Destroy(gameObject);
+        } 
 
         if (gameObject.transform.parent != null) 
         {
