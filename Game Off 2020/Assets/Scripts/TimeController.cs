@@ -14,14 +14,12 @@ public class TimeController : MonoBehaviour
     public float timeStart = 60;
 
     public TextMeshProUGUI textBox;
-    //public Text textBox;
 
     public void Update()
     {
         if (timeStart < 0)
         {
             SceneManager.LoadScene("Game Over Scene");
-            //StartCoroutine(LoadLevel());
         }
 
         if (timeStart > 0)
@@ -30,13 +28,4 @@ public class TimeController : MonoBehaviour
             textBox.text = "Time Left " + Mathf.Round(timeStart).ToString();
         }
     }
-
-    /*IEnumerator LoadLevel() 
-    {
-        transition.SetTrigger("Start");
-
-        yield return new WaitForSeconds(transitionTime);
-
-        SceneManager.LoadScene("Game Over Scene");
-    }*/
 }

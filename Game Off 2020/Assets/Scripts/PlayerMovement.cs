@@ -86,7 +86,7 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = Vector2.up * jumpForce;
 
             cont++;
-
+            Debug.Log("AEK0");
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded == false && cont > 0) 

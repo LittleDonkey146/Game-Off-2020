@@ -9,11 +9,9 @@ public class PlayerHealth : MonoBehaviour
 {
 
     public float health = 10000f;
-    //public float damage;
 
     public TextMeshProUGUI text;
 
-    //public Text text;
     private string healthtext;
 
     public GameObject lavaDrops;
@@ -21,8 +19,6 @@ public class PlayerHealth : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip damageAudio;
     public AudioClip healthAlert;
-
-    private bool playIt = true;
 
     private void Update()
     {
@@ -37,27 +33,22 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(float damageTaken)
     {
+        health -= damageTaken;
+
         //this is if a lava bullet hit the player
-
-        if (audioSource.isPlaying != healthAlert) 
+        if (audioSource.clip != healthAlert) 
         {
-            health -= damageTaken;
-
             audioSource.clip = damageAudio;
             audioSource.Play();
 
-            audioSource.loop = false;
         }
 
         //this if the health is below like 9500
-        if (health < 9500 && playIt == true) 
+        if (health < 9500 /*&& playIt == true*/) 
         {
-            playIt = false;
-
             audioSource.clip = healthAlert;
             audioSource.Play();
 
-            audioSource.loop = false;      
         }  
 
         if (health <= 0)
@@ -70,13 +61,5 @@ public class PlayerHealth : MonoBehaviour
     {
         Destroy(gameObject);
         SceneManager.LoadScene("Game Over Scene");
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(collision.gameObject.tag == "Lava Drops")
-        {
-            //TakeDamage(damage);
-        }
     }
 }

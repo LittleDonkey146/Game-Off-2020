@@ -42,18 +42,18 @@ public class LavaDrops : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.layer == 9) //Layer 8 is the ground and Layer 9 is the player.
+        if(collision.gameObject.layer == 9) // Layer 9 is the player.
         {
             DealDamage();
 
         }
 
-        if (gameObject.tag == "Lava Drops")
+        if (gameObject.CompareTag("Lava Drops"))
         {
             Destroy(gameObject);
         }
 
-        if (gameObject.tag == "Big Lava") // Used in order to wait for the particles effect to play properly
+        if (gameObject.CompareTag("Big Lava")) // Used in order to wait for the particles effect to play properly
         {
             StartCoroutine(PlayParticles());
             Destroy(gameObject.GetComponent<MeshRenderer>());
