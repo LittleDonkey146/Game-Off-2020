@@ -37,10 +37,10 @@ public class GravityScript : MonoBehaviour
             Destroy(gameObject);
         } 
 
-        /*if (gameObject.transform.parent != null) 
+        if (gameObject.transform.parent != null) 
         {
             isPickedUp2.updateVariable();
             //set the bool variable of "PickingUp" script to false (isPickedUp == false);
-        }*/
+        }
     }
 }

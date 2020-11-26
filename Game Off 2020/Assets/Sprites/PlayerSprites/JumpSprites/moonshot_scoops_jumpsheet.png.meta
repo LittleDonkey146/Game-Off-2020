@@ -1,7 +1,67 @@
 fileFormatVersion: 2
-guid: bf9724e175fb00c47a4b9d1014215010
+guid: 436e7875a3a8d5d4ea9c970d72084bbe
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3099571353947808789
+    second: moonshot_scoops_jumpsheet_0
+  - first:
+      213: 2281165860520092312
+    second: moonshot_scoops_jumpsheet_1
+  - first:
+      213: -1683645229321476094
+    second: moonshot_scoops_jumpsheet_2
+  - first:
+      213: -5102880442751255580
+    second: moonshot_scoops_jumpsheet_3
+  - first:
+      213: -3443901912826684855
+    second: moonshot_scoops_jumpsheet_4
+  - first:
+      213: 6505616308139775596
+    second: moonshot_scoops_jumpsheet_5
+  - first:
+      213: 37714669707604348
+    second: moonshot_scoops_jumpsheet_6
+  - first:
+      213: 5640555047137665429
+    second: moonshot_scoops_jumpsheet_7
+  - first:
+      213: -2277384978559654434
+    second: moonshot_scoops_jumpsheet_8
+  - first:
+      213: -1506376786717349778
+    second: moonshot_scoops_jumpsheet_9
+  - first:
+      213: -6639685871007213839
+    second: moonshot_scoops_jumpsheet_10
+  - first:
+      213: -4845466771575967194
+    second: moonshot_scoops_jumpsheet_11
+  - first:
+      213: 660011261092522018
+    second: moonshot_scoops_jumpsheet_12
+  - first:
+      213: 6855916080060362028
+    second: moonshot_scoops_jumpsheet_13
+  - first:
+      213: 6723091623921207270
+    second: moonshot_scoops_jumpsheet_14
+  - first:
+      213: 9044471512282643189
+    second: moonshot_scoops_jumpsheet_15
+  - first:
+      213: -5476346481321326880
+    second: moonshot_scoops_jumpsheet_16
+  - first:
+      213: -1105998445918264280
+    second: moonshot_scoops_jumpsheet_17
+  - first:
+      213: -4136346172406709180
+    second: moonshot_scoops_jumpsheet_18
+  - first:
+      213: 4640138605287024478
+    second: moonshot_scoops_jumpsheet_19
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -75,18 +135,6 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1

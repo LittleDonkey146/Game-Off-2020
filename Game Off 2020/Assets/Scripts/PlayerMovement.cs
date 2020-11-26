@@ -8,7 +8,8 @@ public class PlayerMovement : MonoBehaviour
     public float velocita = 5f; 
     public float jumpForce = 10f; 
     private float moveInput; 
-    private Rigidbody2D rb; 
+    private Rigidbody2D rb;
+    private Collider2D coll;
     private bool facingRight = true; 
 
     private bool isGrounded;
@@ -27,12 +28,15 @@ public class PlayerMovement : MonoBehaviour
     public AudioClip footstep;
 
     public Animator anim;
+    private enum State {idle, running, jumping, falling};
+    private State state = State.idle;
     private int cont = 0;
 
     void Start()
     {
         extraJump = extraJumpValue;
         rb = GetComponent<Rigidbody2D>();
+        coll = GetComponent<Collider2D>();
 
         //StartCoroutine(PlaySoundsCoroutine());
     }
@@ -46,31 +50,12 @@ public class PlayerMovement : MonoBehaviour
 
         //_audioSource.clip = footstep;
 
-        if (facingRight == false && moveInput > 0)
-        {
-            anim.SetBool("running", true);           
-            Flip();
-        }
-        
-        if (facingRight == true && moveInput < 0)
-        {
-            anim.SetBool("running", true);         
-            Flip();
-        }
-
-        if (moveInput == 0)
-        {
-            anim.SetBool("running", false);
-        }
-        else 
-        {
-            anim.SetBool("running", true);
-        }
-
     }
 
     void Update()
     {
+        Movement();
+
         if (isGrounded == true)
         {
             extraJump = extraJumpValue;
@@ -78,6 +63,9 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && extraJump > 0)
         {
+            //state = State.jumping;
+            //anim.SetInteger("state", (int)state);
+
             _audioSource.clip = jump1;
             _audioSource.Play();
             extraJump--;
@@ -91,7 +79,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded == false && cont > 0) 
         {
-            cont = 0;
+             cont = 0;
             _audioSource.clip = jump2;
             _audioSource.Play();
 
@@ -114,6 +102,48 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void Movement() 
+    {
+        if (facingRight == false && moveInput > 0)
+        {
+            state = State.running;
+            anim.SetInteger("state", (int)state);
+            Flip();
+        }
+
+        if (facingRight == true && moveInput < 0)
+        {
+            state = State.running;
+            anim.SetInteger("state", (int)state);
+            Flip();
+        }
+
+        if (state != State.jumping) 
+        {
+            if (moveInput == 0)
+            {
+                state = State.idle;
+                anim.SetInteger("state", (int)state);
+            }
+            else
+            {
+                state = State.running;
+                anim.SetInteger("state", (int)state);
+            }
+        }
+
+        if (!coll.IsTouchingLayers(whatIsGround))
+        {
+            state = State.jumping;
+            anim.SetInteger("state", (int)state);
+        }
+        else
+        {
+            state = State.idle;
+        }
+       
+    }
+
     /*public void PlaySFX()
     {
         _audioSource.Play();
@@ -129,7 +159,7 @@ public class PlayerMovement : MonoBehaviour
         
     }*/
 
-    void Flip()
+    private void Flip()
     {
         facingRight = !facingRight;
 
