@@ -36,9 +36,9 @@ public class PauseMenu : MonoBehaviour
 
         Time.timeScale = 0f;
         pauseMenu.SetActive(true);
-        pauseMenu.transform.position = new Vector3(960, 540, 0); // Moves the Pause Menu in the center of the canvas
+        pauseMenu.transform.position = new Vector3(Screen.width/2, Screen.height/2, 0);
         audioSource.Pause();
-
+         
     }
 
     // When the Pause Menu is deactivated (when P is pressed again)
