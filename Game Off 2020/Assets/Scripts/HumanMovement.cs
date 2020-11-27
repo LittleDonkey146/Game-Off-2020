@@ -23,19 +23,6 @@ public class HumanMovement : MonoBehaviour
         peopleSaved = 0;
     }
 
-    /*private void Update()
-    {
-        if (gameObject.transform.parent != null)
-        {
-            rb2D.velocity = new Vector2(0,0); //NEEDS IMPROVEMENT, WILL CHECK LATER
-            rb2D.isKinematic = true;
-        }
-        else
-        {
-            rb2D.isKinematic = false;
-        }
-    }*/
-
     void OnTriggerEnter2D(Collider2D collider) //NEEDS TO BE REWORKED, NOT WORKING AS IT SHOULD
     {
         if (collider.CompareTag("Human Goal")) 

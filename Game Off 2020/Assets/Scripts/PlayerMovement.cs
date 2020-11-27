@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundCheck;
     public float checkRadious;
     public LayerMask whatIsGround;
+    public LayerMask otherGround; //layer for the destructable objects
 
     private int extraJump;
     public int extraJumpValue;
@@ -132,7 +133,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        if (!coll.IsTouchingLayers(whatIsGround))
+        if (!coll.IsTouchingLayers(whatIsGround) && !coll.IsTouchingLayers(otherGround))
         {
             state = State.jumping;
             anim.SetInteger("state", (int)state);

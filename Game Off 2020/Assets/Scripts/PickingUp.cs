@@ -77,6 +77,7 @@ public class PickingUp : MonoBehaviour
 
     public void updateVariable() 
     {
+        Debug.Log("Variable Changed");
         isPickedUp = false;
     }
 }
