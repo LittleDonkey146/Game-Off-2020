@@ -10,4 +10,9 @@ public class NPC : MonoBehaviour
     {
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        TriggerDialogue();
+    }
 }
