@@ -144,21 +144,6 @@ public class PlayerMovement : MonoBehaviour
        
     }
 
-    /*public void PlaySFX()
-    {
-        _audioSource.Play();
-    }
-
-    /*public IEnumerator PlaySoundsCoroutine()
-    {
-        while ( SOMETHING )
-        {
-            PlaySFX();
-            yield return new WaitForSeconds(0.5f);
-        }
-        
-    }*/
-
     private void Flip()
     {
         facingRight = !facingRight;
