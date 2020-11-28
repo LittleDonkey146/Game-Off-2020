@@ -534,14 +534,54 @@ PrefabInstance:
       propertyPath: m_Type
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2806914224604618342, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2806914224604618342, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2806914224604618342, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2806914224604618344, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2806914224771011229, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
       propertyPath: OutputAudioMixerGroup
       value: 
       objectReference: {fileID: 24300002, guid: 5cf3f371c804f0d43bb51f689336cae2, type: 2}
+    - target: {fileID: 2806914224771011230, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -445
+      objectReference: {fileID: 0}
+    - target: {fileID: 2806914224771011230, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -266.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2806914224771011230, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 34.310654
+      objectReference: {fileID: 0}
     - target: {fileID: 2806914224795304457, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
       propertyPath: OutputAudioMixerGroup
       value: 
       objectReference: {fileID: 24300002, guid: 5cf3f371c804f0d43bb51f689336cae2, type: 2}
+    - target: {fileID: 2806914224795304458, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -445
+      objectReference: {fileID: 0}
+    - target: {fileID: 2806914224795304458, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -375.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2806914224795304458, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 34.310654
+      objectReference: {fileID: 0}
     - target: {fileID: 2806914224797270686, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -642,6 +682,18 @@ PrefabInstance:
       propertyPath: OutputAudioMixerGroup
       value: 
       objectReference: {fileID: 24300002, guid: 5cf3f371c804f0d43bb51f689336cae2, type: 2}
+    - target: {fileID: 2806914225490824216, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -445
+      objectReference: {fileID: 0}
+    - target: {fileID: 2806914225490824216, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -430.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2806914225490824216, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 34.310654
+      objectReference: {fileID: 0}
     - target: {fileID: 2806914225618246406, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -662,6 +714,22 @@ PrefabInstance:
       propertyPath: OutputAudioMixerGroup
       value: 
       objectReference: {fileID: 24300002, guid: 5cf3f371c804f0d43bb51f689336cae2, type: 2}
+    - target: {fileID: 2806914225618246408, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -445
+      objectReference: {fileID: 0}
+    - target: {fileID: 2806914225618246408, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -321
+      objectReference: {fileID: 0}
+    - target: {fileID: 2806914225618246408, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 34.310654
+      objectReference: {fileID: 0}
+    - target: {fileID: 2806914225874292552, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2806914226159290536, guid: 307b6ef466a2eea48a06ed0b97297de0, type: 3}
       propertyPath: m_text
       value: GAME NAME
