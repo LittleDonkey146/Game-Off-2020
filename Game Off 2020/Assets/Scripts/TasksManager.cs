@@ -35,7 +35,7 @@ public class TasksManager : MonoBehaviour
 
     public void Update()
     {
-        if (tasksDone == 4) 
+        if (tasksDone == 5) 
         {
             SceneManager.LoadScene("Win Scene");
         }

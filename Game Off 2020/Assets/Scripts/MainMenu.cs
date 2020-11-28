@@ -20,7 +20,7 @@ public class MainMenu : MonoBehaviour
     // The Start Game button
     public void StartGame() 
     {
-        SceneManager.LoadScene("Main Game");
+        SceneManager.LoadScene("Tutorial Scene");
     }
 
     //The options button is not yet ready

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class LevelLoader : MonoBehaviour
 {
     public Animator transition;
-    public float waitFor = 1f;
+    public float waitFor = 2f;
 
     public void Update()
     {
@@ -18,13 +18,14 @@ public class LevelLoader : MonoBehaviour
             || scene.name == "Main Menu"
             || scene.name == "Options"
             || scene.name == "Win Scene"
-            || scene.name == "Test")
-        {
-            StartCoroutine(changeScene());
+            || scene.name == "Tutorial Scene"
+            || scene.name == "Test"){
+
+            StartCoroutine(ChangeScene());
         }
     }
 
-    IEnumerator changeScene() 
+    IEnumerator ChangeScene() 
     {
         transition.SetTrigger("Start");
 

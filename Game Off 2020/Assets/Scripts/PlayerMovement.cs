@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
     public AudioClip footstep;
 
     public Animator anim;
-    private enum State {idle, running, jumping, falling};
+    private enum State {idle, running, jumping, falling, doubleJumping};
     private State state = State.idle;
     private int cont = 0;
 
@@ -64,9 +64,6 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && extraJump > 0)
         {
-            //state = State.jumping;
-            //anim.SetInteger("state", (int)state);
-
             _audioSource.clip = jump1;
             _audioSource.Play();
             extraJump--;

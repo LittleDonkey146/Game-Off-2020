@@ -13,11 +13,6 @@ public class TimePickUp : MonoBehaviour
         timeController = mainCamera.GetComponent<TimeController>();
     }
 
-    public void Update()
-    {
-
-    }
-
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.CompareTag("Player"))
