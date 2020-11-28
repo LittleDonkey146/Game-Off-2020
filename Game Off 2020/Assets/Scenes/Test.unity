@@ -1914,7 +1914,7 @@ MonoBehaviour:
   dialogue:
     name: Tutorial Man
     sentences:
-    - Hello Jamer. Welcome to our game. We hope you are safe in these difficult times.
+    - Hello my man
     - I will guide you through the controls of our game. If you press SPACE you can
       jump, if you press SPACE twice, you double jump.
     - You can pick people and objects with F and let them down with G. You have to
@@ -7549,6 +7549,9 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
+  otherGround:
+    serializedVersion: 2
+    m_Bits: 0
   extraJumpValue: 1
   _audioSource: {fileID: 1301105988}
   jump1: {fileID: 8300000, guid: d12c89b5a59c04840a31c13513a40b81, type: 3}
