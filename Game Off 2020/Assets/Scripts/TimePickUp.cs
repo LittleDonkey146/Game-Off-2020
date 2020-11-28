@@ -22,7 +22,6 @@ public class TimePickUp : MonoBehaviour
     {
         if (collider.CompareTag("Player"))
         {
-            Debug.Log("hit");
             timeController.timeStart += 10;
             Destroy(gameObject);
         }
