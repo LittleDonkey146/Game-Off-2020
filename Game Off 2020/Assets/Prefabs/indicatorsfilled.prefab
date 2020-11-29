@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1731988199537991654}
   - component: {fileID: 1731988199537991655}
-  - component: {fileID: 1731988199537991652}
   - component: {fileID: 1731988199537991672}
   - component: {fileID: 1731988199537991673}
-  m_Layer: 13
+  - component: {fileID: -4914782474434467327}
+  m_Layer: 17
   m_Name: indicatorsfilled
   m_TagString: MetalGameObject
   m_Icon: {fileID: 0}
@@ -85,18 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1731988199537991652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1731988199537991653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8e8b329d76de764686cc191f10838f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &1731988199537991672
 Rigidbody2D:
   serializedVersion: 4
@@ -144,3 +132,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.50597644, y: 0.7893133}
   m_EdgeRadius: 0
+--- !u!114 &-4914782474434467327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731988199537991653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 026a0934afac19c45a889048f0715da1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

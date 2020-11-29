@@ -25,13 +25,13 @@ public class TasksManager : MonoBehaviour
     {
         isPickedUp2.updateVariable();
 
-        if (collision.CompareTag("FuelGameObject") || collision.CompareTag("MetalGameObject")) 
+        /*if (collision.CompareTag("FuelGameObject") || collision.CompareTag("MetalGameObject")) 
         {
             tasksDone += 1;
             tasksDoneCounter = tasksDone.ToString();
             text.text = "Tasks Done: " + tasksDoneCounter;
             //set the bool variable of "PickingUp" script to false (isPickedUp == false);
-        }
+        }*/
     }
 
     public void Update()
