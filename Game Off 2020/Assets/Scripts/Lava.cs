@@ -10,9 +10,7 @@ public class Lava : MonoBehaviour
 
     private void Awake()
     {
-        lavaActivation = true;
-        StartCoroutine(LavaInstantiation());
-        StartCoroutine(BigLava());
+        StartCoroutine(StartLava());
     }
 
     void Start()
@@ -20,6 +18,14 @@ public class Lava : MonoBehaviour
 
     }
 
+
+    public IEnumerator StartLava()
+    {
+        yield return new WaitForSeconds(20f);
+        lavaActivation = true;
+        StartCoroutine(LavaInstantiation());
+        StartCoroutine(BigLava());
+    }
 
     // The method for creating the lava rain
     public IEnumerator LavaInstantiation()
@@ -36,7 +42,7 @@ public class Lava : MonoBehaviour
     {
         while (lavaActivation == true)
         {
-            yield return new WaitForSeconds(Random.Range(30f, 60f));
+            yield return new WaitForSeconds(Random.Range(10f, 20f));
 
             GameObject bigLavaDrop = Instantiate(bigLavaPrefab, transform.position, Quaternion.AngleAxis(90f, Vector3.forward)) as GameObject;
         }

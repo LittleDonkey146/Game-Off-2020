@@ -133,6 +133,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f21b560f209c3924ab18a06db58fb9ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 30
+  damage: 20
   thrust: 5
   explosionParticles: {fileID: 0}
