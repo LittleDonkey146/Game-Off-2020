@@ -10,18 +10,15 @@ public class TasksManager : MonoBehaviour
     public int tasksDone = 0;
     public string tasksDoneCounter;
 
-    public HumanMovement peopleSaved;
-    public int persons;
-
     private PickingUp isPickedUp2;
 
     public TextMeshProUGUI text;
-    //public Text text;
+
+    public HumanManagement humansSaved;
 
     private void Start()
     {
         isPickedUp2 = FindObjectOfType<PickingUp>();
-        peopleSaved = GameObject.FindGameObjectWithTag("People").GetComponent<HumanMovement>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -39,8 +36,7 @@ public class TasksManager : MonoBehaviour
 
     public void Update()
     {
-        persons = peopleSaved.peopleSaved;
-        if (tasksDone == 5 && persons == 5) 
+        if (tasksDone == 5 && humansSaved.humanSaved == 5) 
         {
             SceneManager.LoadScene("Win Scene");
         }

@@ -10415,7 +10415,6 @@ GameObject:
   - component: {fileID: 16421558}
   - component: {fileID: 16421557}
   - component: {fileID: 16421556}
-  - component: {fileID: 16421555}
   - component: {fileID: 16421554}
   m_Layer: 13
   m_Name: HumanTest (2)
@@ -10457,21 +10456,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &16421555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 16421552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cd1312f9fdb7d749950d9cb665bf9a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
-  text: {fileID: 1088435909}
-  peopleSaved: 0
 --- !u!114 &16421556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59522,6 +59506,170 @@ Transform:
   m_Father: {fileID: 468611246}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &78397208
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 78397209}
+  - component: {fileID: 78397214}
+  - component: {fileID: 78397213}
+  - component: {fileID: 78397212}
+  - component: {fileID: 78397211}
+  - component: {fileID: 78397210}
+  m_Layer: 13
+  m_Name: HumanTest (4)
+  m_TagString: People
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &78397209
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78397208}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.17, y: -11.22, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2064398582}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &78397210
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78397208}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2c53e1866cf91f949b85e0297597d744, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &78397211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78397208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8e8b329d76de764686cc191f10838f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &78397212
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78397208}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.5364583, y: 1.1197916}
+    newSize: {x: 3.21875, y: 6.71875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5364583, y: 1.1197916}
+  m_EdgeRadius: 0
+--- !u!50 &78397213
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78397208}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!212 &78397214
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78397208}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 3
+  m_Sprite: {fileID: 8781680370776160763, guid: d1a7f564bca7d0b478653744b3387f55, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3.21875, y: 6.71875}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &97123393
 GameObject:
   m_ObjectHideFlags: 0
@@ -60997,7 +61145,6 @@ GameObject:
   - component: {fileID: 444803609}
   - component: {fileID: 444803608}
   - component: {fileID: 444803607}
-  - component: {fileID: 444803606}
   - component: {fileID: 444803605}
   m_Layer: 13
   m_Name: HumanTest (3)
@@ -61039,21 +61186,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &444803606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 444803603}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cd1312f9fdb7d749950d9cb665bf9a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
-  text: {fileID: 1088435909}
-  peopleSaved: 0
 --- !u!114 &444803607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63442,6 +63574,7 @@ GameObject:
   - component: {fileID: 828359029}
   - component: {fileID: 828359031}
   - component: {fileID: 828359032}
+  - component: {fileID: 828359033}
   m_Layer: 12
   m_Name: Human Placement Goal
   m_TagString: Human Goal
@@ -63554,9 +63687,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tasksDone: 0
   tasksDoneCounter: 
-  peopleSaved: {fileID: 1622792793}
-  persons: 0
   text: {fileID: 657234548}
+  humansSaved: {fileID: 828359033}
+--- !u!114 &828359033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828359028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 822f2f95cce3864478fa56b7bd7ef836, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  humanSaved: 0
+  text: {fileID: 1088435909}
 --- !u!1001 &832667329
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -115882,7 +116028,6 @@ GameObject:
   - component: {fileID: 1568025373}
   - component: {fileID: 1568025372}
   - component: {fileID: 1568025371}
-  - component: {fileID: 1568025370}
   - component: {fileID: 1568025369}
   m_Layer: 13
   m_Name: HumanTest (1)
@@ -115924,21 +116069,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1568025370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1568025367}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cd1312f9fdb7d749950d9cb665bf9a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
-  text: {fileID: 1088435909}
-  peopleSaved: 0
 --- !u!114 &1568025371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116149,7 +116279,6 @@ GameObject:
   - component: {fileID: 1622792796}
   - component: {fileID: 1622792795}
   - component: {fileID: 1622792794}
-  - component: {fileID: 1622792793}
   - component: {fileID: 1622792799}
   m_Layer: 13
   m_Name: HumanTest
@@ -116158,21 +116287,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1622792793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1622792792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cd1312f9fdb7d749950d9cb665bf9a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
-  text: {fileID: 1088435909}
-  peopleSaved: 0
 --- !u!114 &1622792794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118021,6 +118135,7 @@ Transform:
   - {fileID: 1568025368}
   - {fileID: 16421553}
   - {fileID: 444803604}
+  - {fileID: 78397209}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
