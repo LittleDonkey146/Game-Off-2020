@@ -6,6 +6,9 @@ public class AirCraftPartsManager : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Ok");
+        if(collision.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
