@@ -7,6 +7,7 @@ public class TopLeftCheck : MonoBehaviour
 {
 
     public GameObject task;
+    public Image filledImage;
 
     private void Start()
     {
@@ -37,12 +38,12 @@ public class TopLeftCheck : MonoBehaviour
         if (task != null)
         {
             gameObject.SetActive(true);
-            Debug.Log("AEK0");
+            filledImage.enabled = false;
         }
         else
         {
             gameObject.SetActive(false);
-            Debug.Log("aek1");
+            filledImage.enabled = true;
         }
     }
 }

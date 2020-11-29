@@ -61474,7 +61474,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 468611245}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 78.02, y: 2.55, z: -0.25250146}
+  m_LocalPosition: {x: -17.5, y: -11.37, z: -0.25250146}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 741411015}
@@ -61845,7 +61845,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.48, y: -10.710001, z: -10.38}
+  m_LocalPosition: {x: 35.99, y: -9.42, z: -10.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1858543154}
@@ -62685,7 +62685,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &657234547
 RectTransform:
   m_ObjectHideFlags: 0
@@ -63093,7 +63093,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 699171341}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.48, y: -10.710001, z: -10.38}
+  m_LocalPosition: {x: 35.99, y: -9.42, z: -10.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 751308988}
@@ -63664,6 +63664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   task: {fileID: 7101186188511489735, guid: dded08eaca67d3641bef6441599b129b, type: 3}
+  filledImage: {fileID: 749336297}
 --- !u!1001 &760221999
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63837,7 +63838,6 @@ GameObject:
   - component: {fileID: 828359030}
   - component: {fileID: 828359029}
   - component: {fileID: 828359031}
-  - component: {fileID: 828359032}
   - component: {fileID: 828359033}
   m_Layer: 12
   m_Name: Human Placement Goal
@@ -63937,22 +63937,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &828359032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 828359028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8df53e0a41200a4f8213a783319af85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tasksDone: 0
-  tasksDoneCounter: 
-  text: {fileID: 657234548}
-  humansSaved: {fileID: 828359033}
 --- !u!114 &828359033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64166,6 +64150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   task: {fileID: 1480118590772699764, guid: dbd44ec8538569346b606726d13ca646, type: 3}
+  filledImage: {fileID: 62666311}
 --- !u!114 &880319955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114862,7 +114847,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1207289494}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.24, y: -3.03, z: -0.25250146}
+  m_LocalPosition: {x: -15.5, y: -12.3, z: -0.25250146}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 104595117}
@@ -115038,7 +115023,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1300767551}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -58.04, y: -11.57, z: -0.65}
+  m_LocalPosition: {x: -19.22, y: -12.62, z: -0.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1662871821}
@@ -115067,6 +115052,7 @@ GameObject:
   - component: {fileID: 1301105986}
   - component: {fileID: 1301105995}
   - component: {fileID: 1301105994}
+  - component: {fileID: 1301105997}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -115344,7 +115330,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1301105985}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.65, y: -11.1, z: -0.38}
+  m_LocalPosition: {x: 36.16, y: -9.81, z: -0.38}
   m_LocalScale: {x: 0.50615704, y: 0.50615704, z: 0.50615704}
   m_Children:
   - {fileID: 888898314}
@@ -115565,6 +115551,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1301105997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301105985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8df53e0a41200a4f8213a783319af85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tasksDone: 0
+  tasksDoneCounter: 
+  text: {fileID: 657234548}
+  humansSaved: {fileID: 828359033}
+  image1: {fileID: 749336297}
+  image2: {fileID: 778665961}
+  image3: {fileID: 1324811626}
+  image4: {fileID: 919209486}
+  image5: {fileID: 62666311}
 --- !u!1 &1324811624
 GameObject:
   m_ObjectHideFlags: 0
@@ -115796,6 +115803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   task: {fileID: 1731988199537991653, guid: f2c54777828bca144b10303030883bb9, type: 3}
+  filledImage: {fileID: 1324811626}
 --- !u!1001 &1398756595
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -116259,7 +116267,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1489409580}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.72, y: -4.53, z: -0.25250146}
+  m_LocalPosition: {x: -13.2, y: -12.91, z: -0.25250146}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1403060519}
@@ -116284,6 +116292,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3150577909984536283, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3150577910349700414, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3150577910349700415, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
       propertyPath: m_LocalPosition.y
       value: -11.05
@@ -116295,6 +116311,14 @@ PrefabInstance:
     - target: {fileID: 3150577911409998795, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
       propertyPath: m_Name
       value: PlatformMover2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3150577911409998795, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3150577911409998795, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 3150577911409998837, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
       propertyPath: m_LocalPosition.x
@@ -117063,6 +117087,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   task: {fileID: 6670793132039293739, guid: b4fda256f6d6a43489ca03754636fb99, type: 3}
+  filledImage: {fileID: 778665961}
 --- !u!1 &1682318244
 GameObject:
   m_ObjectHideFlags: 0
@@ -118248,6 +118273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   task: {fileID: 1687723804141274714, guid: 54036c367ed34cd4d8fa52199655aac0, type: 3}
+  filledImage: {fileID: 919209486}
 --- !u!114 &1962350499
 MonoBehaviour:
   m_ObjectHideFlags: 0
