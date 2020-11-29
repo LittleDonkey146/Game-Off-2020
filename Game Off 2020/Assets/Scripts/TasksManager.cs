@@ -16,6 +16,8 @@ public class TasksManager : MonoBehaviour
 
     public HumanManagement humansSaved;
 
+    public Image image1, image2, image3, image4, image5;
+
     private void Start()
     {
         isPickedUp2 = FindObjectOfType<PickingUp>();
@@ -25,13 +27,21 @@ public class TasksManager : MonoBehaviour
     {
         isPickedUp2.updateVariable();
 
-        /*if (collision.CompareTag("FuelGameObject") || collision.CompareTag("MetalGameObject")) 
+        if (collision.CompareTag("FuelGameObject") || collision.CompareTag("MetalGameObject")) 
         {
             tasksDone += 1;
             tasksDoneCounter = tasksDone.ToString();
             text.text = "Tasks Done: " + tasksDoneCounter;
-            //set the bool variable of "PickingUp" script to false (isPickedUp == false);
-        }*/
+        }
+
+        if(collision.CompareTag("Human Goal") && tasksDone == 5)
+        {
+            Destroy(image1);
+            Destroy(image2);
+            Destroy(image3);
+            Destroy(image4);
+            Destroy(image5);
+        }
     }
 
     public void Update()
