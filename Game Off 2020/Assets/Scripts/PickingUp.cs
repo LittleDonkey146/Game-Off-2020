@@ -18,6 +18,8 @@ public class PickingUp : MonoBehaviour
     public AudioClip metalAudio;
     public AudioClip peopleAudio;
 
+    //private SpriteRenderer m_spriteRenderer;
+
     void Update()
     {
         PickUpMethod();        
@@ -60,6 +62,8 @@ public class PickingUp : MonoBehaviour
                     audioSource.clip = peopleAudio;
                     audioSource.Play();
                     audioSource.loop = false;
+                    //m_spriteRenderer = GetComponent<SpriteRenderer>();
+                    //m_spriteRenderer.enabled = false;
                 }
 
                 if (isPickedUp == false)
