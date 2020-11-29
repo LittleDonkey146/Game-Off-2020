@@ -27,8 +27,6 @@ public class GravityScript : MonoBehaviour
         if (collision.CompareTag("Human Goal")) 
         {
             Destroy(gameObject);
-        } 
-
-        
+        }      
     }
 }

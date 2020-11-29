@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6670793132039293742}
   - component: {fileID: 6670793132039293741}
-  - component: {fileID: 6670793132039293740}
   - component: {fileID: 6670793132039293776}
   - component: {fileID: 6670793132039293743}
-  m_Layer: 13
+  - component: {fileID: 4935095441296990540}
+  m_Layer: 17
   m_Name: landinggearsfilled
   m_TagString: MetalGameObject
   m_Icon: {fileID: 0}
@@ -85,18 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6670793132039293740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6670793132039293739}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8e8b329d76de764686cc191f10838f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &6670793132039293776
 Rigidbody2D:
   serializedVersion: 4
@@ -144,3 +132,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6948677, y: 0.67307377}
   m_EdgeRadius: 0
+--- !u!114 &4935095441296990540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6670793132039293739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 026a0934afac19c45a889048f0715da1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

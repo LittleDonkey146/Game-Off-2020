@@ -37,7 +37,7 @@ public class PickingUp : MonoBehaviour
         {
             return;
         }
-        else if (collider.tag == "People" || collider.tag == "FuelGameObject" || collider.tag == "MetalGameObject")
+        else if (collider.tag == "People")
         {
             if(Input.GetKeyDown(KeyCode.F))
             {
