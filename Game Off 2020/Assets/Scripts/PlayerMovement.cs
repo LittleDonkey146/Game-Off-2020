@@ -29,9 +29,11 @@ public class PlayerMovement : MonoBehaviour
     public AudioClip footstep;
 
     public Animator anim;
-    private enum State {idle, running, jumping, falling, doubleJumping};
+    private enum State {idle, running, jumping, falling, doubleJumping, pickingUp};
     private State state = State.idle;
     private int cont = 0;
+    private bool varDoubleJumping;
+    private bool isPickingUp;
 
     void Start()
     {
@@ -74,13 +76,19 @@ public class PlayerMovement : MonoBehaviour
             cont++;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded == false && cont > 0) 
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded == false && cont > 0)
         {
-             cont = 0;
+            cont = 0;
             _audioSource.clip = jump2;
             _audioSource.Play();
 
+            varDoubleJumping = true;
+
             _audioSource.loop = false;
+        }
+        else 
+        {
+            varDoubleJumping = false;
         }
 
         if (_audioSource.isPlaying == false && isGrounded == true && moveInput != 0)
@@ -97,25 +105,36 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public void Movement() 
+    public void Movement()
     {
-        if (facingRight == false && moveInput > 0)
+        if (!Input.GetKeyDown(KeyCode.F) && state != State.pickingUp)
         {
-            state = State.running;
-            anim.SetInteger("state", (int)state);
-            Flip();
-        }
+            if (facingRight == false && moveInput > 0)
+            {
+                state = State.running;
+                anim.SetInteger("state", (int)state);
+                Flip();
+            }
 
-        if (facingRight == true && moveInput < 0)
-        {
-            state = State.running;
-            anim.SetInteger("state", (int)state);
-            Flip();
-        }
+            if (facingRight == true && moveInput < 0)
+            {
+                state = State.running;
+                anim.SetInteger("state", (int)state);
+                Flip();
+            }
 
-        if (state != State.jumping) 
-        {
-            if (moveInput == 0)
+            if (!coll.IsTouchingLayers(whatIsGround) && !coll.IsTouchingLayers(otherGround) && varDoubleJumping == false)
+            {
+                state = State.jumping;
+                anim.SetInteger("state", (int)state);
+
+                if (!coll.IsTouchingLayers(whatIsGround) && !coll.IsTouchingLayers(otherGround) && varDoubleJumping == true)
+                {
+                    state = State.doubleJumping;
+                    anim.SetInteger("state", (int)state);
+                }
+            }
+            else if (moveInput == 0)
             {
                 state = State.idle;
                 anim.SetInteger("state", (int)state);
@@ -126,17 +145,23 @@ public class PlayerMovement : MonoBehaviour
                 anim.SetInteger("state", (int)state);
             }
         }
+        else 
+        {
+            if (state != State.running && state != State.jumping && state != State.doubleJumping) 
+            {
+                state = State.pickingUp;
+                anim.SetInteger("state", (int)state);
+                StartCoroutine(ExampleCoroutine());
+            }
+        }
 
-        if (!coll.IsTouchingLayers(whatIsGround) && !coll.IsTouchingLayers(otherGround))
-        {
-            state = State.jumping;
-            anim.SetInteger("state", (int)state);
-        }
-        else
-        {
-            state = State.idle;
-        }
-       
+    }
+
+    IEnumerator ExampleCoroutine()
+    {
+        yield return new WaitForSeconds(0.5f);
+
+        state = State.idle;
     }
 
     private void Flip()

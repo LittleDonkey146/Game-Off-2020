@@ -15,6 +15,7 @@ TagManager:
   - MetalGameObject
   - People
   - TimeCounter
+  - elevator
   layers:
   - Default
   - TransparentFX

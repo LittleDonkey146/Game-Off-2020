@@ -60056,6 +60056,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3150577909984536283, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
+      propertyPath: m_TagString
+      value: elevator
+      objectReference: {fileID: 0}
     - target: {fileID: 3150577910349700415, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
       propertyPath: m_LocalPosition.y
       value: -9.32
@@ -60068,6 +60072,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlatformMover2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3150577911409998836, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
+      propertyPath: childTransform
+      value: 
+      objectReference: {fileID: 1918521255}
     - target: {fileID: 3150577911409998837, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
       propertyPath: m_LocalPosition.x
       value: -40.42
@@ -63562,6 +63570,11 @@ Transform:
   m_Father: {fileID: 468611246}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &824876517 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3150577909984536260, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
+  m_PrefabInstance: {fileID: 1126150699}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &828359028
 GameObject:
   m_ObjectHideFlags: 0
@@ -64325,6 +64338,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8431666198550523327, guid: 9644a53b8da750d4da1ad318d2989fa1, type: 3}
   m_PrefabInstance: {fileID: 223722302}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &957050740 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3150577909984536260, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
+  m_PrefabInstance: {fileID: 1066981449}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &997198866
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64459,6 +64477,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3150577909984536283, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
+      propertyPath: m_TagString
+      value: elevator
+      objectReference: {fileID: 0}
     - target: {fileID: 3150577910349700415, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
       propertyPath: m_LocalPosition.y
       value: -3.65
@@ -64471,6 +64493,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlatformMover2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3150577911409998836, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
+      propertyPath: childTransform
+      value: 
+      objectReference: {fileID: 957050740}
     - target: {fileID: 3150577911409998837, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
       propertyPath: m_LocalPosition.x
       value: -74.22
@@ -64826,6 +64852,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3150577909984536283, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
+      propertyPath: m_TagString
+      value: elevator
+      objectReference: {fileID: 0}
     - target: {fileID: 3150577910349700415, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
       propertyPath: m_LocalPosition.y
       value: -5.22
@@ -64838,6 +64868,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlatformMover2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3150577911409998836, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
+      propertyPath: childTransform
+      value: 
+      objectReference: {fileID: 824876517}
     - target: {fileID: 3150577911409998837, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.6510773
@@ -114723,6 +114757,7 @@ GameObject:
   - component: {fileID: 1301105986}
   - component: {fileID: 1301105995}
   - component: {fileID: 1301105994}
+  - component: {fileID: 1301105997}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -114928,7 +114963,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.1995371, y: -0.21159601}
+  m_Offset: {x: -0.1995371, y: -0.16028792}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -114939,7 +114974,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.3533459, y: 2.4853525}
+  m_Size: {x: 1.3533459, y: 2.3827362}
   m_EdgeRadius: 0
 --- !u!212 &1301105992
 SpriteRenderer:
@@ -115221,6 +115256,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1301105997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301105985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10ff40470caeffa4ebf2fbbd31a42d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1339087589 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8431666198550523327, guid: 9644a53b8da750d4da1ad318d2989fa1, type: 3}
@@ -115593,6 +115640,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3150577909984536283, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
+      propertyPath: m_TagString
+      value: elevator
+      objectReference: {fileID: 0}
     - target: {fileID: 3150577910349700415, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
       propertyPath: m_LocalPosition.y
       value: -10.18
@@ -115604,6 +115655,18 @@ PrefabInstance:
     - target: {fileID: 3150577911409998795, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
       propertyPath: m_Name
       value: PlatformMover2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3150577911409998795, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3150577911409998836, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
+      propertyPath: childTransform
+      value: 
+      objectReference: {fileID: 1719991830}
+    - target: {fileID: 3150577911409998836, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
+      propertyPath: speed
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3150577911409998837, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
       propertyPath: m_LocalPosition.x
@@ -115816,6 +115879,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1474401019 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3150577909984536260, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
+  m_PrefabInstance: {fileID: 3150577909494466196}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1489409580
 GameObject:
   m_ObjectHideFlags: 0
@@ -115865,6 +115933,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3150577909984536283, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
+      propertyPath: m_TagString
+      value: elevator
+      objectReference: {fileID: 0}
     - target: {fileID: 3150577910349700415, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
       propertyPath: m_LocalPosition.y
       value: -11.05
@@ -115877,6 +115949,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlatformMover2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3150577911409998836, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
+      propertyPath: childTransform
+      value: 
+      objectReference: {fileID: 1960273566}
     - target: {fileID: 3150577911409998837, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
       propertyPath: m_LocalPosition.x
       value: -27.84
@@ -116469,6 +116545,11 @@ RectTransform:
   m_AnchoredPosition: {x: -1973, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!4 &1640682024 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3150577909984536260, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
+  m_PrefabInstance: {fileID: 1728620940}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1662871820
 GameObject:
   m_ObjectHideFlags: 0
@@ -116819,6 +116900,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9644a53b8da750d4da1ad318d2989fa1, type: 3}
+--- !u!4 &1719991830 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3150577909984536260, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
+  m_PrefabInstance: {fileID: 1405526439}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1728620940
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -116834,6 +116920,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3150577909984536283, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
+      propertyPath: m_TagString
+      value: elevator
+      objectReference: {fileID: 0}
     - target: {fileID: 3150577910349700415, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
       propertyPath: m_LocalPosition.y
       value: -10.91
@@ -116846,6 +116936,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlatformMover2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3150577911409998836, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
+      propertyPath: childTransform
+      value: 
+      objectReference: {fileID: 1640682024}
     - target: {fileID: 3150577911409998837, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.62
@@ -117747,10 +117841,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3150577911409998837, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
   m_PrefabInstance: {fileID: 3150577909494466196}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1918521255 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3150577909984536260, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
+  m_PrefabInstance: {fileID: 178035749}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1932572317 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3150577911409998837, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
   m_PrefabInstance: {fileID: 1728620940}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1960273566 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3150577909984536260, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
+  m_PrefabInstance: {fileID: 1517629859}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1962350496
 GameObject:
@@ -118227,6 +118331,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -20.91
       objectReference: {fileID: 0}
+    - target: {fileID: 3150577909984536283, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
+      propertyPath: m_TagString
+      value: elevator
+      objectReference: {fileID: 0}
     - target: {fileID: 3150577910349700415, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
       propertyPath: m_LocalPosition.y
       value: -8.44
@@ -118234,6 +118342,14 @@ PrefabInstance:
     - target: {fileID: 3150577911409998795, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
       propertyPath: m_Name
       value: PlatformMover2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3150577911409998836, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
+      propertyPath: childTransform
+      value: 
+      objectReference: {fileID: 1474401019}
+    - target: {fileID: 3150577911409998836, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
+      propertyPath: speed
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3150577911409998837, guid: 2a45124cabc2b9141936bf4d817c1571, type: 3}
       propertyPath: m_LocalPosition.x
