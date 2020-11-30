@@ -25,7 +25,7 @@ public class TasksManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        isPickedUp2.updateVariable();
+        //isPickedUp2.updateVariable();
 
         if (collision.CompareTag("FuelGameObject") || collision.CompareTag("MetalGameObject")) 
         {
@@ -42,6 +42,12 @@ public class TasksManager : MonoBehaviour
             Destroy(image3);
             Destroy(image4);
             Destroy(image5);
+        }
+
+        if(collision.CompareTag("Human Goal"))
+        {
+            isPickedUp2.updateVariable();
+
         }
     }
 

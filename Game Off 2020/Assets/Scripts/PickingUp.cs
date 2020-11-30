@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PickingUp : MonoBehaviour
 {
@@ -18,11 +19,19 @@ public class PickingUp : MonoBehaviour
     public AudioClip metalAudio;
     public AudioClip peopleAudio;
 
-    //private SpriteRenderer m_spriteRenderer;
+    public TextMeshProUGUI text;
 
     void Update()
     {
-        PickUpMethod();        
+        PickUpMethod();
+        if(isPickedUp == true)
+        {
+            text.enabled = true;
+        }
+        else
+        {
+            text.enabled = false;
+        }
     }
 
     private void PickUpMethod()
@@ -62,8 +71,6 @@ public class PickingUp : MonoBehaviour
                     audioSource.clip = peopleAudio;
                     audioSource.Play();
                     audioSource.loop = false;
-                    //m_spriteRenderer = GetComponent<SpriteRenderer>();
-                    //m_spriteRenderer.enabled = false;
                 }
 
                 if (isPickedUp == false)

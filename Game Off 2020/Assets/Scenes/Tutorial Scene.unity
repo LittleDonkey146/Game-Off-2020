@@ -49765,7 +49765,7 @@ MonoBehaviour:
   dialogue:
     name: Tutorial Man
     sentences:
-    - Wait. What is that? Do you hear it?
+    - Wait what it that? Can you hear it?
 --- !u!212 &623346524
 SpriteRenderer:
   m_ObjectHideFlags: 0
