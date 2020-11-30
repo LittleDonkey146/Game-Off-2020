@@ -22,7 +22,7 @@ public class TutorialScript : MonoBehaviour
 
     IEnumerator WaitBeforeTheGame()
     { 
-        yield return new WaitForSeconds(10f); //Wait dor 10 sec
+        yield return new WaitForSeconds(15f); //Wait dor 10 sec
 
         audioSource.Play(); //Play the audio
 
