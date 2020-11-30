@@ -919,7 +919,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 441052293}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e1ddef09104d69b4d93fbe76f4b7a29f, type: 3}
   m_Name: 
@@ -934,6 +934,7 @@ MonoBehaviour:
   fuelAudio: {fileID: 8300000, guid: 0e049acc6c44bc1449d6c2a16e197c9f, type: 3}
   metalAudio: {fileID: 8300000, guid: b0d148a64e3a41b4aae4d53352837462, type: 3}
   peopleAudio: {fileID: 8300000, guid: eedd58b851ae32c47a7a4ac59cfc37e8, type: 3}
+  text: {fileID: 0}
 --- !u!82 &441052299
 AudioSource:
   m_ObjectHideFlags: 0
@@ -99629,7 +99630,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1345953586}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.62, y: -3.88, z: -4.8424044}
+  m_LocalPosition: {x: 8.01, y: -3.88, z: -4.8424044}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 650237135}
@@ -99785,7 +99786,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1581262854}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.57, y: -3.9, z: -1.41}
+  m_LocalPosition: {x: 8.05, y: -3.9, z: -1.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -110232,11 +110233,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1480118590772699766, guid: dbd44ec8538569346b606726d13ca646, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.63
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1480118590772699766, guid: dbd44ec8538569346b606726d13ca646, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.17
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1480118590772699766, guid: dbd44ec8538569346b606726d13ca646, type: 3}
       propertyPath: m_LocalPosition.z
