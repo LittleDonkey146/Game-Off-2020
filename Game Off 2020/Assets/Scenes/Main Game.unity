@@ -67325,7 +67325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transition: {fileID: 0}
   transitionTime: 1
-  timeStart: 60
+  timeStart: 150
   textBox: {fileID: 608425604}
 --- !u!1 &532303073
 GameObject:
