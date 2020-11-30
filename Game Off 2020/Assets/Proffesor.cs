@@ -3,26 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class TutorialScript : MonoBehaviour
+public class Proffesor : MonoBehaviour
 {
-    public Animator transition;
     public AudioSource audioSource;
-    public bool isPlaying;
+    public Animator transition;
 
-    private void Start()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Scene scene = SceneManager.GetActiveScene();
-
-        if (scene.name == "Tutorial Scene")
+        if(collision.CompareTag("Player"))
         {
-            StartCoroutine(WaitBeforeTheGame());          
+            StartCoroutine(StartGame());
         }
-        
     }
 
-    IEnumerator WaitBeforeTheGame()
-    { 
-        yield return new WaitForSeconds(40f); //Wait for 40 sec
+    IEnumerator StartGame()
+    {
 
         audioSource.Play(); //Play the audio
 
@@ -33,5 +28,4 @@ public class TutorialScript : MonoBehaviour
         SceneManager.LoadScene("Main Game");
 
     }
-
 }
