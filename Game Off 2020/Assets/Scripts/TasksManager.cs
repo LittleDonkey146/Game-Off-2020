@@ -29,6 +29,7 @@ public class TasksManager : MonoBehaviour
 
         if (collision.CompareTag("FuelGameObject") || collision.CompareTag("MetalGameObject")) 
         {
+            
             tasksDone += 1;
             tasksDoneCounter = tasksDone.ToString();
             text.text = "Tasks Done: " + tasksDoneCounter;
