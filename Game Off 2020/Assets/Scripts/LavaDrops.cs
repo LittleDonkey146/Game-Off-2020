@@ -63,6 +63,14 @@ public class LavaDrops : MonoBehaviour
 
     }
 
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if(collider.CompareTag("Human Goal"))
+        {
+            Destroy(gameObject);
+        }
+    }
+
     IEnumerator PlayParticles()
     {
         explosionParticles.Play();
