@@ -44,7 +44,7 @@ public class PlayerHealth : MonoBehaviour
         }
 
         //this if the health is below like 9500
-        if (health < 30 /*&& playIt == true*/) 
+        if (health < 40 /*&& playIt == true*/) 
         {
             audioSource.clip = healthAlert;
             audioSource.Play();
