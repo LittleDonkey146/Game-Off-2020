@@ -32,7 +32,7 @@ public class Lava : MonoBehaviour
     {
         while (lavaActivation == true)
         {
-            yield return new WaitForSeconds(Random.Range(0f, 10f));
+            yield return new WaitForSeconds(Random.Range(5f, 15f));
 
             GameObject lavaDrop = Instantiate(lavaPrefab, transform.position, Quaternion.AngleAxis(90f, Vector3.forward)) as GameObject; // Instantiated as GameObject, just to be ok if we need anything else
         }
@@ -42,7 +42,7 @@ public class Lava : MonoBehaviour
     {
         while (lavaActivation == true)
         {
-            yield return new WaitForSeconds(Random.Range(10f, 20f));
+            yield return new WaitForSeconds(Random.Range(30f, 40f));
 
             GameObject bigLavaDrop = Instantiate(bigLavaPrefab, transform.position, Quaternion.AngleAxis(90f, Vector3.forward)) as GameObject;
         }

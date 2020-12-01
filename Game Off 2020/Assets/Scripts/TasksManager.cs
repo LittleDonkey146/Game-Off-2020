@@ -25,7 +25,6 @@ public class TasksManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //isPickedUp2.updateVariable();
 
         if (collision.CompareTag("FuelGameObject") || collision.CompareTag("MetalGameObject")) 
         {
@@ -42,6 +41,7 @@ public class TasksManager : MonoBehaviour
             Destroy(image3);
             Destroy(image4);
             Destroy(image5);
+            WinCondition();
         }
 
         if(collision.CompareTag("Human Goal"))
@@ -53,10 +53,17 @@ public class TasksManager : MonoBehaviour
 
     public void Update()
     {
-        if (tasksDone == 5 && humansSaved.humanSaved == 4) 
+        /*if (tasksDone == 5 && humansSaved.humanSaved == 4) 
+        {
+            SceneManager.LoadScene("Win Scene");
+        }*/
+    }
+
+    public void WinCondition()
+    {
+        if (tasksDone == 5 && humansSaved.humanSaved == 4)
         {
             SceneManager.LoadScene("Win Scene");
         }
     }
-
 }
