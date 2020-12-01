@@ -17,8 +17,7 @@ public class DestructScript : MonoBehaviour
     private void Update()
     {
         if (coll.IsTouchingLayers(layer)) 
-        {
-            Debug.Log("touching it"); 
+        {          
             StartCoroutine(Cont());
         }       
     }
@@ -27,14 +26,14 @@ public class DestructScript : MonoBehaviour
     {
         anim.SetBool("hitted", true);
 
-        yield return new WaitForSeconds(1.2f);
+        yield return new WaitForSeconds(1);
         
         box.isTrigger = true;
 
+        Destroy(gameObject);
+
         yield return new WaitForSeconds(0.5f);
 
-        Destroy(gameObject);      
-        
     }
 
 }

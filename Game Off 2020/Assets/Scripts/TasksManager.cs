@@ -53,7 +53,7 @@ public class TasksManager : MonoBehaviour
 
     public void Update()
     {
-        if (tasksDone == 5 && humansSaved.humanSaved == 5) 
+        if (tasksDone == 5 && humansSaved.humanSaved == 4) 
         {
             SceneManager.LoadScene("Win Scene");
         }

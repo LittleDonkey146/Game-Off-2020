@@ -11645,7 +11645,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 16421552}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.78, y: -14.38, z: 0}
+  m_LocalPosition: {x: 19.25, y: -14.43, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2064398582}
@@ -64324,7 +64324,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 291317050}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 66.72, y: -11.14, z: -0.38}
+  m_LocalPosition: {x: 67.27, y: -11.36, z: -0.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2085231881}
@@ -64409,7 +64409,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: bf9724e175fb00c47a4b9d1014215010, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -67983,8 +67983,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 444803603}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 53.26, y: -12.37, z: 0}
-  m_LocalScale: {x: 0.17216156, y: 0.17216156, z: 0.17216156}
+  m_LocalPosition: {x: 53.357, y: -12.34, z: 0}
+  m_LocalScale: {x: 0.20764573, y: 0.20764573, z: 0.20764573}
   m_Children: []
   m_Father: {fileID: 2064398582}
   m_RootOrder: 3
@@ -72772,7 +72772,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 11
   m_Sprite: {fileID: 21300000, guid: 0abbaf4e04331af459ac8ffeb459accb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -125008,7 +125008,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 401, y: -470}
+  m_AnchoredPosition: {x: 413, y: -454}
   m_SizeDelta: {x: 490.1499, y: 59.670227}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1378195629
@@ -125031,7 +125031,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You are carrying a person
+  m_text: "You are carrying a person\n   Press g to drop it down"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a9b95420474947947b3c8bd4044244ee, type: 2}
   m_sharedMaterial: {fileID: 1522749846225862277, guid: a9b95420474947947b3c8bd4044244ee, type: 2}
