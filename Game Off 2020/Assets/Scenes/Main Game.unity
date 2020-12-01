@@ -124313,7 +124313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbc9472c678da95458a8e84e38a6ce8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 250
   text: {fileID: 743821020}
   lavaDrops: {fileID: 5399162565726765318, guid: 578263d65f2d6ff4d8d75d5b068a031d, type: 3}
   audioSource: {fileID: 1301105995}
@@ -126725,7 +126725,7 @@ MonoBehaviour:
     - It seems there has been a massive volcano eruption which will destroy the earth
       in number of minutes
     - 'Save as many people as you can (you can pick them up by pressing F). find
-      the 5 missing parts of the space ship which includes the rocker fuel we are
+      the 5 missing parts of the space ship which includes the rocket fuel we are
       going to need, so we can get the people back safely to the moon base. '
     - Go now, the fate of humanity lies on you.
 --- !u!23 &1637971960
