@@ -70896,8 +70896,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0, y: 110}
-  m_SizeDelta: {x: 1000, y: 500}
+  m_AnchoredPosition: {x: 14.8, y: 81.8}
+  m_SizeDelta: {x: 1046.5117, y: 588.79517}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &866336620
 Animator:
@@ -71599,7 +71599,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -170.6, y: 172.9}
+  m_AnchoredPosition: {x: -170.6, y: 200}
   m_SizeDelta: {x: 497.8186, y: 69.2299}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &990845081
@@ -126720,12 +126720,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: HINT
+    name: 
     sentences:
     - It seems there has been a massive volcano eruption which will destroy the earth
       in number of minutes
-    - 'Save as many people as you can (you can pick them up with F). find the 5 missing
-      parts of the space ship so we can get the people back safely to the moon base. '
+    - 'Save as many people as you can (you can pick them up by pressing F). find
+      the 5 missing parts of the space ship which includes the rocker fuel we are
+      going to need, so we can get the people back safely to the moon base. '
     - Go now, the fate of humanity lies on you.
 --- !u!23 &1637971960
 MeshRenderer:
@@ -128746,7 +128747,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.6, y: -21.8}
+  m_AnchoredPosition: {x: 4.6, y: 101}
   m_SizeDelta: {x: 848.0679, y: 285.73215}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2146931549
