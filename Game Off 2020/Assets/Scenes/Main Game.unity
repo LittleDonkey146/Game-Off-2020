@@ -68644,7 +68644,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transition: {fileID: 0}
   transitionTime: 1
-  timeStart: 150
+  timeStart: 180
   textBox: {fileID: 608425604}
 --- !u!1 &532303073
 GameObject:
@@ -126811,9 +126811,9 @@ MonoBehaviour:
     - It seems there has been a massive volcano eruption which will destroy the earth
       in number of minutes
     - 'There are 4 people to save (you can pick them up by pressing F and get them
-      back to the ship). find the 5 missing parts of the space ship which includes
-      the rocket fuel we are going to need, so we can get the people back safely
-      to the moon base. '
+      back to the ship, only 1 by 1). '
+    - find the 5 missing parts of the space ship which includes the rocket fuel we
+      are going to need, so we can get the people back safely to the moon base.
     - Go now, the fate of humanity lies on you.
 --- !u!23 &1637971960
 MeshRenderer:
